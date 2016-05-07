@@ -31,6 +31,9 @@ public:
 		bool O_port = false;
 	};
 
+	AIG() {}
+	AIG(AIG&&) = default;
+
 	int  input_length ();
 	int  output_length();
 	void set_input    (int,bool);

@@ -14,12 +14,26 @@ AIG ISC_parser::parse_isc_file(const char *filename) {
 		if( all_blank(str) )
 			continue;
 		get_nums(str, signal_id);
-		if( strstr(str, "OUTPUT")!=nullptr || strstr(str, "INPUT")!=nullptr )
-			printf("%d\n", signal_id[0]);
-		else if( strstr(str, "BUFF")!=nullptr || strstr(str, "NOT")!=nullptr )
-			printf("%d %d\n", signal_id[0], signal_id[1]);
-		else
-			printf("%d %d %d\n", signal_id[0], signal_id[1], signal_id[2]);
+		if     ( strstr(str, "INPUT")!=nullptr )
+			ret.add_input(signal_id[0]);
+		else if( strstr(str, "OUTPUT")!=nullptr )
+			ret.add_output(signal_id[0]);
+		else if( strstr(str, "AND")!=nullptr )
+			ret.add_and_gate(signal_id[1], signal_id[2], signal_id[0]);
+		else if( strstr(str, "NAND")!=nullptr )
+			ret.add_nand_gate(signal_id[1], signal_id[2], signal_id[0]);
+		else if( strstr(str, "OR")!=nullptr )
+			ret.add_or_gate(signal_id[1], signal_id[2], signal_id[0]);
+		else if( strstr(str, "NOR")!=nullptr )
+			ret.add_nor_gate(signal_id[1], signal_id[2], signal_id[0]);
+		else if( strstr(str, "XOR")!=nullptr )
+			ret.add_xor_gate(signal_id[1], signal_id[2], signal_id[0]);
+		else if( strstr(str, "NXOR")!=nullptr )
+			ret.add_nxor_gate(signal_id[1], signal_id[2], signal_id[0]);
+		else if( strstr(str, "BUFF")!=nullptr )
+			ret.add_buff_gate(signal_id[1], signal_id[0]);
+		else if( strstr(str, "NOT")!=nullptr )
+			ret.add_not_gate(signal_id[1], signal_id[0]);
 	}
 	fclose(in);
 	return ret;
