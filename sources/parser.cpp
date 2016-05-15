@@ -1,4 +1,4 @@
-#include "parser.h"
+#include "sources/parser.h"
 
 AIG ISC_parser::parse_isc_file(const char *filename) {
 	AIG ret;

@@ -1,4 +1,4 @@
-#include "AIG.h"
+#include "sources/AIG.h"
 
 int AIG::input_length() {
 	return I_tachi.size();

@@ -3,7 +3,7 @@
 
 #include <cstdio>
 #include <cstring>
-#include "AIG.h"
+#include "sources/AIG.h"
 using namespace std;
 
 class ISC_parser {
