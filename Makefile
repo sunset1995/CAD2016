@@ -6,7 +6,7 @@ BUILD_DIR = build
 MINISAT_RELSYM ?= -g
 
 # General flags
-G_FLAGS  = -O3 -std=c++11 -D NDEBUG -w
+G_FLAGS  = -O2 -std=c++11 -D NDEBUG -w
 
 SAT_SRCS = $(wildcard sources/minisat/*.cpp) $(wildcard sources/minisat/core/*.cpp) $(wildcard sources/minisat/simp/*.cpp) $(wildcard sources/minisat/utils/*.cpp)
 SAT_OBJS = $(addprefix build/, $(SAT_SRCS:.cpp=.o))
@@ -14,7 +14,7 @@ SRCS     = $(wildcard sources/*.cpp)
 OBJS     = $(addprefix build/, $(SRCS:.cpp=.o))
 
 C_FLAGS  = $(G_FLAGS) -I. -D __STDC_LIMIT_MACROS -D __STDC_FORMAT_MACROS$(MINISAT_RELSYM)
-L_FLAGS  = $(G_FLAGS) -lz --static $(MINISAT_RELSYM)
+L_FLAGS  = $(G_FLAGS) -lz $(MINISAT_RELSYM)
 
 # Copile minisat
 $(BUILD_DIR)/%.o: %.cpp
