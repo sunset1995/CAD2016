@@ -3,13 +3,12 @@
 
 #include <cstdio>
 #include <cstring>
-#include "sources/AIG.h"
 using namespace std;
 
 class ISC_parser {
 public:
 	// input filename; output AIG
-	AIG parse_isc_file(const char*);
+	void parse_isc_file(const char*);
 private:
 	// self used function
 	void trim_comment_newline(char*);
