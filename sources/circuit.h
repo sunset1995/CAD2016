@@ -1,3 +1,20 @@
+/*
+2016 CAD
+Circuit Equivalence Checking
+Circuit graph transform to CNF expression
+
+Gate mode definitions:
+0 input
+1 output
+2 and gate
+3 nand gate
+4 or gate
+5 nor gate
+6 xor gate
+7 nxor gate
+8 buff gate
+9 not gate
+*/
 #ifndef CIRCUIT_H_INCLUDED
 #define CIRCUIT_H_INCLUDED
 #include<cstdio>
@@ -22,7 +39,7 @@ class circuit
 public:
     vector<node> circuit; // store all nodes
     vector<int> output; // which nodes are output?
-    map<int, int> mp;
+    map<int, int> mp; // gate name map to integer
     int cnt;
     void init();
     void insert_gate(int mode, int in1, int in2, int out);
