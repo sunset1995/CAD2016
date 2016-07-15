@@ -17,7 +17,7 @@ vector< vector<int> > convert(node n); //convert a gate expression to a cnf expr
 
 bool sat_solver(vector< vector<int> > cnf, int n);
 
-bool beq(circuit a, circuit b);
+bool beq(Circuit a, Circuit b);
 
 /*
 to call insert_gate function:
