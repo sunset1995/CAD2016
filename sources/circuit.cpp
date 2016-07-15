@@ -1,6 +1,34 @@
 #include "sources/circuit.h"
 
-void circuit::init()
+Circuit::Circuit(Circuit&& other)
+{
+    circuit=other.circuit;
+    output=other.output;
+    mp=other.mp;
+    cnt=other.cnt;
+    intput_cnt=other.input_cnt;
+    gate_cnt=other.gate_cnt;
+
+    // release the memories but i don't know how
+}
+
+Circuit& operator=(Circuit&& other)
+{
+    //free the existing resource but i don't know
+    //copy data pointer
+    if(this!=other){
+        circuit=other.circuit;
+        output=other.output;
+        mp=other.mp;
+        cnt=other.cnt;
+        intput_cnt=other.input_cnt;
+        gate_cnt=other.gate_cnt;
+        //release but i don't know
+    }
+    return *this;
+}
+
+void Circuit::init()
 {
     circuit.clear();
     node n;
@@ -11,7 +39,7 @@ void circuit::init()
     cnt=0;
 }
 
-int circuit::gate_trans(int gate)// to map the node id to an interger
+int Circuit::gate_trans(int gate)// to map the node id to an interger
 {
     if(gate==-1) return -1;
     if(mp.find(gate)!=mp.end()) return mp[gate];
@@ -22,13 +50,13 @@ int circuit::gate_trans(int gate)// to map the node id to an interger
     return cnt;
 }
 
-void circuit::insert_output(int out)// to record which gates are primary outputs
+void Circuit::insert_output(int out)// to record which gates are primary outputs
 {
     out=gate_trans(out);
     output.push_back(out);
 }
 
-void circuit::insert_gate(int mode, int in1, int in2, int out)
+void Circuit::insert_gate(int mode, int in1, int in2, int out)
 {
     if(mode==1){
         insert_output(out);
@@ -49,7 +77,7 @@ void circuit::insert_gate(int mode, int in1, int in2, int out)
     circuit[out]=n;
 }
 
-void circuit::insert_fault(int mode, int id)
+void Circuit::insert_fault(int mode, int id)
 {
     id=gate_trans(id);
     if(mode>=2 && mode<=9) circuit[id].mode=mode;
@@ -76,7 +104,7 @@ void circuit::insert_fault(int mode, int id)
     }
 }
 
-void circuit::print_circuit()
+void Circuit::print_circuit()
 {
     printf("cnt=%d input_cnt=%d gate_cnt=%d\n", cnt, input_cnt, gate_cnt);
     for(int i=1;i<circuit.size();i++){
