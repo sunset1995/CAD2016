@@ -24,9 +24,11 @@ int main(int argv, char **argc) {
 	circuit cir_2;
 	int mode, id;
 	scanf("%d %d", &mode, &id);
-	cir_1=ori_cir.insert_fault(mode, id);
+	cir_1=ori_cir;
+    cir_1.insert_fault(mode, id);
 	scanf("%d %d", &mode, &id);
-	cir_2=ori_cir.insert_fault(mode, id);
+	cir_2=ori_cir;
+    cir_2.insert_fault(mode, id);
 	beq(cir_1, cir_2);
 	return 0;
 }
