@@ -85,7 +85,7 @@ vector< vector<int> > convert(node n) //convert a gate expression to a cnf expre
         else tmp.push_back(-out);
         ret.push_back(tmp);
     }
-    if(mode==8||mode==9){// not buff
+    else if(mode==8||mode==9){// not buff
         tmp.clear();// !a !c
         tmp.push_back(-in1);
         if((mode==9&&neg==0)||(mode==8&&neg==1)) tmp.push_back(-out);
