@@ -1,9 +1,9 @@
 #include "sources/parser.h"
 
-circuit ISC_parser::parse_isc_file(const char *filename) {
+Circuit ISC_parser::parse_isc_file(const char *filename) {
 
 
-	circuit ret;
+	Circuit ret;
 	ret.init();
 
 	// open file
