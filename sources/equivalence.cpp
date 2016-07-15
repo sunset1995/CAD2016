@@ -13,7 +13,17 @@ vector< vector<int> > convert(node n) //convert a gate expression to a cnf expre
     neg=n.neg;
     sa0=n.sa0;
     sa1=n.sa1;
-    if(mode==2||mode==3){//and nand
+    if(sa0){
+        tmp.clear();
+        tmp.push_back(-out);
+        ret.push_back(tmp);
+    }
+    else if(sa1){
+        tmp.clear();
+        tmp.push_back(out);
+        ret.push_back(tmp);
+    }
+    else if(mode==2||mode==3){//and nand
         tmp.clear();// !a !b c
         tmp.push_back(-in1);
         tmp.push_back(-in2);
@@ -85,16 +95,6 @@ vector< vector<int> > convert(node n) //convert a gate expression to a cnf expre
         tmp.push_back(in1);
         if((mode==9&&neg==0)||(mode==8&&neg==1)) tmp.push_back(out);
         else tmp.push_back(-out);
-        ret.push_back(tmp);
-    }
-    if(sa0){
-        tmp.clear();
-        tmp.push_back(-out);
-        ret.push_back(tmp);
-    }
-    else if(sa1){
-        tmp.clear();
-        tmp.push_back(out);
         ret.push_back(tmp);
     }
     return ret;
