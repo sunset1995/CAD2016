@@ -10,7 +10,7 @@ using namespace std;
 class ISC_parser {
 public:
 	// input filename; output AIG
-	circuit parse_isc_file(const char*);
+	Circuit parse_isc_file(const char*);
 private:
 	// self used function
 	void trim_comment_newline(char*);
