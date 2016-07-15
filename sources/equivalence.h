@@ -106,23 +106,36 @@ vector< vector<int> > convert(node n) //convert a gate expression to a cnf expre
     return ret;
 }
 
+bool sat_solver(vector< vector<int> > cnf, int n)
+{
+    return 0;
+}
+
 bool beq(circuit a, circuit b)
 {
     circuit miter=a;
     miter.output.clear();
 	//create miter
 	//deal with internal nodes
-    for(int i=0;i<b.circuit.size();i++){
+    for(int i=1;i<b.circuit.size();i++){
         node n=b.circuit[i];
-        if(n.mode!=0){//not a primary input node
-            if(n.in1>a.input_cnt) n.in1+=a.gate_cnt;//not primary input
-            if(n.in2>a.input_cnt) n.in2+=a.gate_cnt;//not primary input
-            n.out+=a.gate_cnt;
-            miter.circuit.push_back(n);
-            miter.cnt++;
-            miter.gate_cnt++;
+        if(n.mode==0){
+            miter.circuit[i].mode=8;
+            n.mode=8;
+            miter.circuit[i].in1=i+a.cnt+b.cnt;
+            n.in1=i+a.cnt+b.cnt;
         }
+        else{
+            n.in1+=a.cnt;
+            n.in2+=a.cnt;
+        }
+        n.out+=a.cnt;
+        miter.circuit.push_back(n);
+        miter.cnt++;
+        miter.gate_cnt++;
     }
+    //add buffers
+
 	//add external xor gates
     for(int i=0;i<b.output.size();i++){
         node n;
@@ -135,38 +148,47 @@ bool beq(circuit a, circuit b)
         miter.circuit.push_back(n);
         miter.output.push_back(n.out);
     }
-    //miter.print_circuit();
+    miter.print_circuit();
 	//convert the whole miter circuit to cnf expression
     vector< vector<int> > cnf;
     vector< vector<int> > tmp;
+    vector<int> sum;
     for(int i=0;i<miter.circuit.size();i++){
-        if(miter.circuit[i].mode!=0){
+        if(miter.circuit[i].mode!=0){// not primary input
             tmp=convert(miter.circuit[i]);
             for(int j=0;j<tmp.size();j++) cnf.push_back(tmp[j]);
         }
+        else{// primary input
+            if(miter.circuit[i].sa0){ //stuck at 0, so add one literal clause of it
+                sum.clear();
+                sum.push_back(-miter.circuit[i].out);
+                cnf.push_back(sum);
+            }
+            else if(miter.circuit[i].sa1){ // stuck at 1, so add one liter clause of it
+                sum.clear();
+                sum.push_back(miter.circuit[i].out);
+                cnf.push_back(sum);
+            }
+        }
     }
     // "OR" the xor gates
-    vector<int> sum;
-    cnt++;
     for(int i=0;i<miter.output.size();i++){
         sum.push_back(miter.output[i]);
     }
-    sum.push_back(-cnt);
     cnf.push_back(sum);
-    for(int i=0;i<miter.output.size();i++){
-        sum.clear();
-        sum.push_back(-miter.output[i]);
-        sum.push_back(cnt);
-        cnf.push_back(sum);
+    // print the cnf expressions
+    for(int i=0;i<cnf.size();i++){
+        printf("(");
+        for(int j=0;j<cnf[i].size();j++){
+            printf("%dv", cnf[i][j]);
+        }
+        printf(")^");
     }
-    sum.clear();
-    sum.push_back(cnt);
-    cnf.push_back(sum);
-    if(sat_solver(cnf, cnt)==0) return 1;// SAT SOLVER
+    if(sat_solver(cnf, miter.cnt)==0) return 1;// SAT SOLVER
     return 0;
 }
 
-void solve()
+int main()
 {
     int mode, out, in1, in2;
     vector<circuit> v;//all the circuit graph
@@ -181,7 +203,7 @@ void solve()
     while(scanf("%d %d", &mode, &out)!=EOF){
         cur_cir=ori_cir;
         cur_cir.insert_fault(mode, out);
-        //cur_cir.print_circuit();
+        cur_cir.print_circuit();
         v.push_back(cur_cir);
     }
     for(int i=0;i<v.size();i++){
@@ -191,4 +213,3 @@ void solve()
     }
     return 0;
 }
-
