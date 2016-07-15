@@ -100,11 +100,6 @@ vector< vector<int> > convert(node n) //convert a gate expression to a cnf expre
     return ret;
 }
 
-bool sat_solver(vector< vector<int> > cnf, int n)
-{
-    return 0;
-}
-
 bool beq(Circuit a, Circuit b)
 {
     Circuit miter=a;
@@ -179,6 +174,6 @@ bool beq(Circuit a, Circuit b)
         }
         printf(")^");
     }
-    if(sat_solver(cnf, miter.cnt)==0) return 1;// SAT SOLVER
+    if(SAT_solver(cnf, miter.cnt)==0) return 1;// SAT SOLVER
     return 0;
 }

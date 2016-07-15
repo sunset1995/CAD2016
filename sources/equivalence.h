@@ -10,12 +10,11 @@ Circuit equvalence checking
 #include <map>
 #include <vector>
 #include "sources/circuit.h"
+#include "sources/SAT_solver.h"
 
 using namespace std;
 
 vector< vector<int> > convert(node n); //convert a gate expression to a cnf expression
-
-bool sat_solver(vector< vector<int> > cnf, int n);
 
 bool beq(Circuit a, Circuit b);
 
