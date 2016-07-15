@@ -118,6 +118,7 @@ bool beq(circuit a, circuit b)
             n.mode=8;
             miter.circuit[i].in1=i+a.cnt+b.cnt+a.output.size();
             n.in1=i+a.cnt+b.cnt+a.output.size();
+            miter.cnt++;
         }
         else{
             n.in1+=a.cnt;
