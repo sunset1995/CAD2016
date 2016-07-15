@@ -1,6 +1,7 @@
 #ifndef __SAT_SOLVER_H
 #define __SAT_SOLVER_H
 
+#include <ctime>
 #include <vector>
 #include <errno.h>
 #include <zlib.h>

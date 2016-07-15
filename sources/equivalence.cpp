@@ -166,14 +166,6 @@ bool beq(Circuit a, Circuit b)
         sum.push_back(miter.output[i]);
     }
     cnf.push_back(sum);
-    // print the cnf expressions
-    for(int i=0;i<cnf.size();i++){
-        printf("(");
-        for(int j=0;j<cnf[i].size();j++){
-            printf("%dv", cnf[i][j]);
-        }
-        printf(")^");
-    }
-    if(SAT_solver(cnf, miter.cnt)==0) return 1;// SAT SOLVER
-    return 0;
+
+    return !SAT_solver(cnf, miter.cnt);
 }

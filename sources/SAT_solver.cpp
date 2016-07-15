@@ -2,17 +2,21 @@
 
 bool SAT_solver(vector< vector<int> > clauses, int n) {
     
+
+    clock_t t = clock();
+
+
     Solver S;
 
     // Setting CNF formular
     while(n > S.nVars())
         S.newVar();
     vector< vec<Lit> > lits(clauses.size());
+    puts("Clauses:");
     for(int i=0,v; i<clauses.size(); ++i) {
         vector<int> &nowClause = clauses[i];
         for(int j=0; j<nowClause.size(); ++j) {
-            printf("%d ", nowClause[j]);
-            fflush(stdout);
+            printf("%4d ", nowClause[j]);
             lits[i].push( mkLit(abs(nowClause[j])-1, nowClause[j]<0) );
         }
         puts("");
@@ -38,13 +42,13 @@ bool SAT_solver(vector< vector<int> > clauses, int n) {
 
     if( ret==l_True ) {
         for (int i = 0; i<S.nVars(); i++)
-            if (S.model[i] != l_Undef) {
+            if (S.model[i] != l_Undef)
                 printf("%s%s%d", (i==0)?"":" ", (S.model[i]==l_True)?"":"-", i+1);
-                fflush(stdout);
-            }
         puts("");
         puts("------");
     }
+
+    printf("SAT_solver: %d clauses, %d vars in %f ms\n", clauses.size(), n, 1000.0*t/CLOCKS_PER_SEC);
 
     // Return result
     if( ret==l_True )
