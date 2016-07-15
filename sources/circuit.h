@@ -18,6 +18,7 @@ Gate mode definitions:
 
 #ifndef CIRCUIT_H_INCLUDED
 #define CIRCUIT_H_INCLUDED
+
 #include<cstdio>
 #include<map>
 #include<vector>
@@ -56,6 +57,8 @@ public:
 void circuit::init()
 {
     circuit.clear();
+    node n;
+    circuit.push_back(n);
     mp.clear();
     input_cnt=0;
     gate_cnt=0;
@@ -66,8 +69,10 @@ int circuit::gate_trans(int gate)// to map the node id to an interger
 {
     if(gate==-1) return -1;
     if(mp.find(gate)!=mp.end()) return mp[gate];
-    mp[gate]=cnt+1;
+    node n;
+    circuit.push_back(n);
     cnt++;
+    mp[gate]=cnt;
     return cnt;
 }
 
@@ -94,7 +99,8 @@ void circuit::insert_gate(int mode, int in1, int in2, int out)
     n.in2=in2;
     n.out=out;
     n.neg=n.sa0=n.sa1=0;
-    circuit.push_back(n);
+    //circuit.push_back(n);
+    circuit[out]=n;
 }
 
 void circuit::insert_fault(int mode, int id)
@@ -127,7 +133,7 @@ void circuit::insert_fault(int mode, int id)
 void circuit::print_circuit()
 {
     printf("cnt=%d input_cnt=%d gate_cnt=%d\n", cnt, input_cnt, gate_cnt);
-    for(int i=0;i<circuit.size();i++){
+    for(int i=1;i<circuit.size();i++){
         printf("mode=%d in=%d in=%d out=%d i=%d\n", circuit[i].mode, circuit[i].in1, circuit[i].in2, circuit[i].out, i);
     }
     for(int i=0;i<output.size();i++){
