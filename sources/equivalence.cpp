@@ -105,9 +105,9 @@ bool sat_solver(vector< vector<int> > cnf, int n)
     return 0;
 }
 
-bool beq(circuit a, circuit b)
+bool beq(Circuit a, Circuit b)
 {
-    circuit miter=a;
+    Circuit miter=a;
     miter.output.clear();
 	//create miter
 	//deal with internal nodes
