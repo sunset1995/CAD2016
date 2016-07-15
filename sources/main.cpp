@@ -1,5 +1,7 @@
 #include <cstdio>
 #include <vector>
+#include "sources/circuit.h"
+#include "sources/equivalence.h"
 #include "sources/parser.h"
 #include "sources/SAT_solver.h"
 
@@ -16,7 +18,7 @@ int main(int argv, char **argc) {
 		return 1;
 	}
 	ISC_parser testdata;
-	testdata.parse_isc_file(argc[1]);
+	circuit ori_cir = testdata.parse_isc_file(argc[1]);
 
 	return 0;
 }

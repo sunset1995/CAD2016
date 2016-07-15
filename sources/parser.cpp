@@ -1,12 +1,16 @@
 #include "sources/parser.h"
 
-void ISC_parser::parse_isc_file(const char *filename) {
+circuit ISC_parser::parse_isc_file(const char *filename) {
+
+
+	circuit ret;
+	ret.init();
 
 	// open file
 	FILE *in = fopen(filename, "r");
 	if( in==nullptr ) {
 		puts("ISC file not found!");
-		return;
+		return ret;
 	}
 	char str[256];
 	int  signal_id[3];
@@ -18,29 +22,29 @@ void ISC_parser::parse_isc_file(const char *filename) {
 			continue;
 		get_nums(str, signal_id);
 		if     ( strstr(str, "INPUT")!=nullptr )
-			printf("Input %d\n", signal_id[0]);
+			ret.insert_gate(0, -1, -1, signal_id[0]);
 		else if( strstr(str, "OUTPUT")!=nullptr )
-			printf("Output %d\n", signal_id[0]);
+			ret.insert_gate(1, -1, -1, signal_id[0]);
 		else if( strstr(str, "AND")!=nullptr )
-			printf("%d = %d AND %d\n", signal_id[0], signal_id[1], signal_id[2]);
+			ret.insert_gate(2, signal_id[1], signal_id[2], signal_id[0]);
 		else if( strstr(str, "NAND")!=nullptr )
-			printf("%d = %d NAND %d\n", signal_id[0], signal_id[1], signal_id[2]);
+			ret.insert_gate(3, signal_id[1], signal_id[2], signal_id[0]);
 		else if( strstr(str, "OR")!=nullptr )
-			printf("%d = %d OR %d\n", signal_id[0], signal_id[1], signal_id[2]);
+			ret.insert_gate(4, signal_id[1], signal_id[2], signal_id[0]);
 		else if( strstr(str, "NOR")!=nullptr )
-			printf("%d = %d NOR %d\n", signal_id[0], signal_id[1], signal_id[2]);
+			ret.insert_gate(5, signal_id[1], signal_id[2], signal_id[0]);
 		else if( strstr(str, "XOR")!=nullptr )
-			printf("%d = %d XOR %d\n", signal_id[0], signal_id[1], signal_id[2]);
+			ret.insert_gate(6, signal_id[1], signal_id[2], signal_id[0]);
 		else if( strstr(str, "NXOR")!=nullptr )
-			printf("%d = %d NXOR %d\n", signal_id[0], signal_id[1], signal_id[2]);
+			ret.insert_gate(7, signal_id[1], signal_id[2], signal_id[0]);
 		else if( strstr(str, "BUFF")!=nullptr )
-			printf("%d = BUFF %d\n", signal_id[0], signal_id[1]);
+			ret.insert_gate(8, signal_id[1], -1, signal_id[0]);
 		else if( strstr(str, "NOT")!=nullptr )
-			printf("%d = NOT %d\n", signal_id[0], signal_id[1]);
+			ret.insert_gate(9, signal_id[1], -1, signal_id[0]);
 	}
 	fclose(in);
 
-	return;
+	return ret;
 }
 
 void ISC_parser::trim_comment_newline(char *str) {
