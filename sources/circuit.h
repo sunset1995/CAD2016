@@ -51,14 +51,12 @@ public:
     int cnt;
     int input_cnt;
     int gate_cnt;
-    Circuit(Circuit&& other);
     void init();
     void insert_gate(int mode, int in1, int in2, int out);
     void insert_output(int out);
     int gate_trans(int gate);
     void insert_fault(int mode, int id);
     void print_circuit();
-    Circuit& operator=(Circuit&& other);
 };
 
 #endif // CIRCUIT_H_INCLUDED

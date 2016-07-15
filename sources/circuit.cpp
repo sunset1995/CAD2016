@@ -1,33 +1,5 @@
 #include "sources/circuit.h"
 
-Circuit::Circuit(Circuit&& other)
-{
-    circuit=other.circuit;
-    output=other.output;
-    mp=other.mp;
-    cnt=other.cnt;
-    intput_cnt=other.input_cnt;
-    gate_cnt=other.gate_cnt;
-
-    // release the memories but i don't know how
-}
-
-Circuit& operator=(Circuit&& other)
-{
-    //free the existing resource but i don't know
-    //copy data pointer
-    if(this!=other){
-        circuit=other.circuit;
-        output=other.output;
-        mp=other.mp;
-        cnt=other.cnt;
-        intput_cnt=other.input_cnt;
-        gate_cnt=other.gate_cnt;
-        //release but i don't know
-    }
-    return *this;
-}
-
 void Circuit::init()
 {
     circuit.clear();
