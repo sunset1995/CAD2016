@@ -18,10 +18,10 @@ int main(int argv, char **argc) {
 		return 1;
 	}
 	ISC_parser testdata;
-	circuit ori_cir = testdata.parse_isc_file(argc[1]);
+	Circuit ori_cir = testdata.parse_isc_file(argc[1]);
 	ori_cir.print_circuit();
-	circuit cir_1;
-	circuit cir_2;
+	Circuit cir_1;
+	Circuit cir_2;
 	int mode, id;
 	scanf("%d %d", &mode, &id);
 	cir_1=ori_cir;
