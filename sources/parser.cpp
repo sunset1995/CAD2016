@@ -10,6 +10,7 @@ Circuit ISC_parser::parse_isc_file(const char *filename) {
 	FILE *in = fopen(filename, "r");
 	if( in==nullptr ) {
 		puts("ISC file not found!");
+		fclose(in);
 		return ret;
 	}
 	char str[256];
@@ -47,6 +48,35 @@ Circuit ISC_parser::parse_isc_file(const char *filename) {
 	return ret;
 }
 
+Fault ISC_parser::parse_fault_file(const char *filename) {
+
+
+	Fault ret;
+
+	// open file
+	FILE *in = fopen(filename, "r");
+	if( in==nullptr ) {
+		puts("fault description file not found!");
+		fclose(in);
+		return ret;
+	}
+	
+	// parse file
+	int id, net;
+	char faultname[20];
+	while( fscanf(in, "%d", &id)!=EOF ) {
+		fscanf(in, "%d%s", &net, faultname);
+		ret.addFault(id, net, faultname);
+	}
+
+	fclose(in);
+	return ret;
+}
+
+
+
+
+// Private self used function
 void ISC_parser::trim_comment_newline(char *str) {
 	for(int i=0; str[i]!='\0'; ++i)
 		if( str[i]=='#' || str[i]=='\n' ) {
