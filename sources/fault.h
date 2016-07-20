@@ -4,27 +4,33 @@
 #include <cstring>
 #include <vector>
 #include <algorithm>
+#include <cstdlib>
 using namespace std;
 
 class Fault {
 public:
     Fault() {
-        id.reserve(4096);
-        net.reserve(4096);
-        mode.reserve(4096);
-        group.reserve(4096);
+        faults.reserve(4096);
     }
 
     inline int size() {
-        return id.size();
+        return faults.size();
     }
 
     inline int getNet(int id) const {
-        return net[id];
+        return faults[id].net;
     }
 
     inline int getMode(int id) const {
-        return mode[id];
+        return faults[id].mode;
+    }
+
+    inline void heuristicSort() {
+        for(int i=0; i<2000; ++i) {
+            int a = rand() % size();
+            int b = rand() % size();
+            swap(faults[a], faults[b]);
+        }
     }
 
     // fault id, net id, fault name
@@ -38,9 +44,10 @@ public:
     vector< pair<int,int> > result();
 private:
     // fault id ; net id ; fault mode
-    vector<int> id;
-    vector<int> net;
-    vector<int> mode;
+    struct fault {
+        int id, net, mode, group;
+    };
+    vector<fault> faults;
 
     // for disjoint set
     vector<int> group;

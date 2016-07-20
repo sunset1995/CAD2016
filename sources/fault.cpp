@@ -1,32 +1,35 @@
 #include "sources/fault.h"
 
 void Fault::addFault(int _id, int _net, const char *_mode) {
-    id.emplace_back(_id);
-    net.emplace_back(_net);
-    mode.emplace_back(faultName2faultMode(_mode));
-    group.emplace_back(group.size());
+    faults.push_back({
+        _id,
+        _net,
+        faultName2faultMode(_mode),
+        0
+    });
+    faults.back().group = faults.size() - 1;
 }
 
 int Fault::find(int id) {
-    return (group[id]==id)? id : (group[id] = find(group[id]));
+    return (faults[id].group==id)? id : (faults[id].group = find(faults[id].group));
 }
 
 void Fault::join(int a, int b) {
     a = find(a);
     b = find(b);
-    if( id[a]<id[b] )
-        group[b] = a;
+    if( faults[a].id < faults[b].id )
+        faults[b].group = a;
     else
-        group[a] = b;
+        faults[a].group = b;
 }
 
 vector< pair<int,int> > Fault::result() {
     vector< pair<int,int> > ret;
-    ret.reserve(id.size());
-    for(int i=0,root; i<id.size(); ++i) {
+    ret.reserve(size());
+    for(int i=0,root; i<size(); ++i) {
         root = find(i);
         if( i!=root )
-            ret.push_back({id[root], id[i]});
+            ret.push_back({faults[root].id, faults[i].id});
     }
     sort(ret.begin(), ret.end());
     return ret;
