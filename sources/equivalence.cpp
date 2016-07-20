@@ -138,7 +138,7 @@ bool beq(Circuit a, Circuit b)
         miter.circuit.push_back(n);
         miter.output.push_back(n.out);
     }
-    miter.print_circuit();
+
 	//convert the whole miter circuit to cnf expression
     vector< vector<int> > cnf;
     vector< vector<int> > tmp;
