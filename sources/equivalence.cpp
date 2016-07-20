@@ -143,7 +143,7 @@ bool beq(Circuit a, Circuit b)
     vector< vector<int> > cnf;
     vector< vector<int> > tmp;
     vector<int> sum;
-    for(int i=0;i<miter.circuit.size();i++){
+    for(int i=1;i<miter.circuit.size();i++){
         tmp=convert(miter.circuit[i]);
         for(int j=0;j<tmp.size();j++) cnf.push_back(tmp[j]);
     }
