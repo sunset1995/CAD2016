@@ -1,9 +1,6 @@
 #include "sources/SAT_solver.h"
 
 bool SAT_solver(vector< vector<int> > clauses, int n) {
-    
-
-    clock_t t = clock();
 
 
     Solver S;
@@ -35,9 +32,6 @@ bool SAT_solver(vector< vector<int> > clauses, int n) {
     // Solve
     vec<Lit> dummy;
     lbool ret = S.solveLimited(dummy);
-
-    t = clock() - t;
-    printf("SAT_solver: %d clauses, %d vars in %f ms\n", clauses.size(), n, 1000.0*t/CLOCKS_PER_SEC);
 
     // Return result
     if( ret==l_True )
