@@ -100,7 +100,7 @@ vector< vector<int> > convert(node n) //convert a gate expression to a cnf expre
     return ret;
 }
 
-bool beq(Circuit a, Circuit b)
+bool beq(const Circuit &a, const Circuit &b)
 {
     Circuit miter=a;
     miter.output.clear();

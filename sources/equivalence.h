@@ -16,7 +16,7 @@ using namespace std;
 
 vector< vector<int> > convert(node n); //convert a gate expression to a cnf expression
 
-bool beq(Circuit a, Circuit b);
+bool beq(const Circuit &a, const Circuit &b);
 
 /*
 to call insert_gate function:
