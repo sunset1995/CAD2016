@@ -144,22 +144,8 @@ bool beq(Circuit a, Circuit b)
     vector< vector<int> > tmp;
     vector<int> sum;
     for(int i=0;i<miter.circuit.size();i++){
-        if(miter.circuit[i].mode!=0){// not primary input
-            tmp=convert(miter.circuit[i]);
-            for(int j=0;j<tmp.size();j++) cnf.push_back(tmp[j]);
-        }
-        else{// primary input
-            if(miter.circuit[i].sa0){ //stuck at 0, so add one literal clause of it
-                sum.clear();
-                sum.push_back(-miter.circuit[i].out);
-                cnf.push_back(sum);
-            }
-            else if(miter.circuit[i].sa1){ // stuck at 1, so add one liter clause of it
-                sum.clear();
-                sum.push_back(miter.circuit[i].out);
-                cnf.push_back(sum);
-            }
-        }
+        tmp=convert(miter.circuit[i]);
+        for(int j=0;j<tmp.size();j++) cnf.push_back(tmp[j]);
     }
     // "OR" the xor gates
     for(int i=0;i<miter.output.size();i++){
