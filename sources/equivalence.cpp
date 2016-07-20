@@ -114,6 +114,7 @@ bool beq(const Circuit &a, const Circuit &b)
             miter.circuit[i].in1=i+a.cnt+b.cnt+a.output.size();
             n.in1=i+a.cnt+b.cnt+a.output.size();
             miter.cnt++;
+            miter.gate_cnt++;
         }
         else{
             n.in1+=a.cnt;
@@ -132,13 +133,12 @@ bool beq(const Circuit &a, const Circuit &b)
         n.mode=6;
         n.in1=a.output[i];
         n.in2=b.output[i]+a.cnt;
-        n.out=miter.cnt+1;
+        n.out=a.cnt+b.cnt+1+i;
         miter.cnt++;
         miter.gate_cnt++;
         miter.circuit.push_back(n);
         miter.output.push_back(n.out);
     }
-
 	//convert the whole miter circuit to cnf expression
     vector< vector<int> > cnf;
     vector< vector<int> > tmp;
