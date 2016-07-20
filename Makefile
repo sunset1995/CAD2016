@@ -6,7 +6,7 @@ BUILD_DIR = build
 MINISAT_RELSYM ?= -g
 
 # General flags
-G_FLAGS  = -O2 -std=c++11 -D NDEBUG -w
+G_FLAGS  = -O3 -std=c++11 -D NDEBUG -w
 
 SAT_SRCS = $(wildcard sources/minisat/*.cpp) $(wildcard sources/minisat/core/*.cpp) $(wildcard sources/minisat/simp/*.cpp) $(wildcard sources/minisat/utils/*.cpp)
 SAT_OBJS = $(addprefix build/, $(SAT_SRCS:.cpp=.o))
