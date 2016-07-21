@@ -16,6 +16,12 @@ using namespace std;
 
 vector< vector<int> > convert(node n); //convert a gate expression to a cnf expression
 
+// Get nowAt nds signal
+// (an assignment of input, current nodes state, circuit)
+bool getSignal(vector<char> &nds, const Circuit &cir, int nowAt);
+
+bool randomInputTest(const Circuit &a, const Circuit &b);
+
 bool beq(const Circuit &a, const Circuit &b);
 
 /*
