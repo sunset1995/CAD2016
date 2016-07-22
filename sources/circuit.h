@@ -39,7 +39,11 @@ struct node
     bool neg;
     bool sa0;
     bool sa1;
-    node(){neg=sa0=sa1=0;}
+    set<int> fanin;//if it is a PO node, which node will affect it?
+    set<int> fanout;//this node will affect which PO node?
+    node(){neg=sa0=sa1=0;
+    fanin.clear();
+    fanout.clear();}
 };
 
 class Circuit
@@ -54,6 +58,7 @@ public:
     void init();
     void insert_gate(int mode, int in1, int in2, int out);
     void insert_output(int out);
+    void dfs();
     int gate_trans(int gate);
     void insert_fault(int mode, int id);
     void print_circuit();
