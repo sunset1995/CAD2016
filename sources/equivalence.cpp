@@ -167,50 +167,91 @@ bool randomInputTest(const Circuit &a, const Circuit &b) {
     return true;
 }
 
+Circuit join(const Circuit &a, const Circuit &b)
+{
+    set<int> PO;
+    set<int> upstream;
+    set<int>::iterator it;
+    set<int>::iterator PO_it;
+    set<int>::iterator upstream_it;
+    node fault_node;
+    node PO_node;
+    node cur_node;
+    int in1, in2, out, mode;
+    int id;
+    fault_node=a.circuit[a.fault_id];
+
+    //to make a POs set
+    for(it=fault_node.fanout.begin();it!=fault_node.fanout.end();it++){
+        PO.insert(*it);
+    }
+    if(b.fault_id!=a.fault_id){
+        fault_node=b.circuit[b.fault_id];
+        for(it=fault_node.fanout.begin();it!=fault_node.fanout.end();it++){
+            PO.insert(*it);
+        }
+    }
+
+    Circuit miter;
+    for(int i=0;i<2;i++){
+        int cnt;
+        if(i==0) cnt=a.cnt;
+        else cnt=b.cnt;
+        // to make a upstream set
+        for(PO_it=PO.begin();PO_it!=PO.end();PO_it++){
+            id=*PO_it;
+            if(id<=cnt){//this id maybe circuit_b's PI stuck buff gate, we don't insert it
+                if(i==0){
+                    PO_node=a.circuit[id];
+                    miter.insert_output(id);
+                }
+                else{
+                    PO_node=b.circuit[id];
+                    miter.insert_output(-(id+1));
+                }
+                for(upstream_it=PO_node.fanin.begin();upstream_it!=PO_node.fanin.end();upstream_it++){
+                    upstream.insert(*upstream_it);
+                }
+            }
+        }
+        //insert all the upstream nodes
+        for(upstream_it=upstream.begin();upstream_it!=upstream.end();upstream_it++){
+            out=*upstream_it;
+            if(i==0) cur_node=a.circuit[out];
+            else cur_node=b.circuit[out];
+            in1=cur_node.in1;
+            in2=cur_node.in2;
+            mode=cur_node.mode;
+            if(i==1){
+                if(mode==0) continue;
+                out=-(out+1);
+                if(b.circuit[in1].mode!=0) in1=-(in1+1);
+                if(in2>0&&b.circuit[in2].mode!=0) in2=-(in2+1);
+            }
+            printf("insert %d %d %d %d\n", mode, in1, in2, out);
+            miter.insert_gate(mode, in1, in2, out);
+            if(cur_node.sa0) miter.insert_fault(0, out);
+            if(cur_node.sa1) miter.insert_fault(1, out);
+            if(cur_node.neg) miter.insert_fault(10, out);
+        }
+    }
+
+    return miter;
+}
+
 bool beq(const Circuit &a, const Circuit &b)
 {
     for(int i=0; i<5; ++i)
         if( !randomInputTest(a, b) )
             return false;
 
-    Circuit miter=a;
-    miter.output.clear();
-	//create miter
-	//deal with internal nodes
-    for(int i=1;i<b.circuit.size();i++){
-        node n=b.circuit[i];
-        if(n.mode==0){
-            miter.circuit[i].mode=8;
-            n.mode=8;
-            miter.circuit[i].in1=i+a.cnt+b.cnt+a.output.size();
-            n.in1=i+a.cnt+b.cnt+a.output.size();
-            miter.cnt++;
-            miter.gate_cnt++;
-        }
-        else{
-            n.in1+=a.cnt;
-            n.in2+=a.cnt;
-        }
-        n.out+=a.cnt;
-        miter.circuit.push_back(n);
-        miter.cnt++;
-        miter.gate_cnt++;
-    }
-    //add buffers
+    Circuit miter=join(a, b);
 
-	//add external xor gates
-    for(int i=0;i<b.output.size();i++){
-        node n;
-        n.mode=6;
-        n.in1=a.output[i];
-        n.in2=b.output[i]+a.cnt;
-        n.out=a.cnt+b.cnt+1+i;
-        miter.cnt++;
-        miter.gate_cnt++;
-        miter.circuit.push_back(n);
-        miter.output.push_back(n.out);
-    }
-	//convert the whole miter circuit to cnf expression
+    //add external xor gates
+    miter.add_xor_gates(miter.output);
+    //miter.print_circuit();
+
+    //convert the whole miter circuit to cnf expression
     vector< vector<int> > cnf;
     vector< vector<int> > tmp;
     vector<int> sum;
