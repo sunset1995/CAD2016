@@ -217,6 +217,7 @@ Circuit join(const Circuit &a, const Circuit &b)
         //insert all the upstream nodes
         for(upstream_it=upstream.begin();upstream_it!=upstream.end();upstream_it++){
             out=*upstream_it;
+            if(out>cnt) continue; //this id maybe circuit_b's PI stuck buff gate, we don't insert it
             if(i==0) cur_node=a.circuit[out];
             else cur_node=b.circuit[out];
             in1=cur_node.in1;
