@@ -22,6 +22,8 @@ bool getSignal(vector<char> &nds, const Circuit &cir, int nowAt);
 
 bool randomInputTest(const Circuit &a, const Circuit &b);
 
+Circuit join(const Circuit &a, const Circuit &b)
+
 bool beq(const Circuit &a, const Circuit &b);
 
 /*
