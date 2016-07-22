@@ -1,5 +1,10 @@
 #include "sources/circuit.h"
 
+Circuit::Circuit()
+{
+    init();
+}
+
 void Circuit::init()
 {
     circuit.clear();
@@ -54,6 +59,7 @@ void Circuit::insert_gate(int mode, int in1, int in2, int out)
 void Circuit::insert_fault(int mode, int id)
 {
     id=gate_trans(id);
+    fault_id=id;
     if(mode>=2 && mode<=9) circuit[id].mode=mode;
     else{
         if(mode==0){//stuck at 0
@@ -76,6 +82,10 @@ void Circuit::insert_fault(int mode, int id)
                 else n.sa1=1;
                 circuit.push_back(n);
                 cnt++;
+                for(int i=1;i<cnt;i++){
+                    if(circuit[i].in1==id) circuit[i].in1=n.out;
+                    if(circuit[i].in2==id) circuit[i].in2=n.out;
+                }
                 circuit[id].sa0=circuit[id].sa1=0;
                 set<int>::iterator it;
                 for(it=circuit[id].fanout.begin();it!=circuit[id].fanout.end();it++){
@@ -99,7 +109,6 @@ void Circuit::dfs()
         while(!s.empty()){
             cur=s.top();
             s.pop();
-            printf("cur=%d\n", cur);
             if(circuit[index].fanin.find(cur)!=circuit[index].fanin.end()) continue;
             circuit[index].fanin.insert(cur);
             circuit[cur].fanout.insert(index);
@@ -111,6 +120,22 @@ void Circuit::dfs()
     }
 }
 
+void Circuit::add_xor_gates(vector<int> out)
+{
+    output.clear();
+    for(int i=0;i<out.size()/2;i++){
+        node n;
+        n.in1=out[i];
+        n.in2=out[i+out.size()/2];
+        n.out=cnt+1;
+        cnt++;
+        gate_cnt++;
+        n.mode=6;
+        circuit.push_back(n);
+        output.push_back(cnt);
+    }
+}
+
 void Circuit::print_circuit()
 {
     set<int>::iterator it;
@@ -118,11 +143,11 @@ void Circuit::print_circuit()
     printf("circuit.size=%d\n", circuit.size());
     for(int i=1;i<circuit.size();i++){
         printf("mode=%d in1=%d in2=%d out=%d neg=%d sa0=%d sa1=%d i=%d\n", circuit[i].mode, circuit[i].in1, circuit[i].in2, circuit[i].out, circuit[i].neg, circuit[i].sa0, circuit[i].sa1, i);
-        printf("fanin: ");
+        /*printf("fanin: ");
         for(it=circuit[i].fanin.begin();it!=circuit[i].fanin.end();it++) printf("%d ", *it);
         printf("\nfanout: ");
         for(it=circuit[i].fanout.begin();it!=circuit[i].fanout.end();it++) printf("%d ", *it);
-        puts("");
+        puts("");*/
     }
     for(int i=0;i<output.size();i++){
         printf("output %d\n", output[i]);
