@@ -55,12 +55,15 @@ public:
     int cnt;
     int input_cnt;
     int gate_cnt;
+    int fault_id;
+    Circuit();
     void init();
     void insert_gate(int mode, int in1, int in2, int out);
     void insert_output(int out);
     void dfs();
     int gate_trans(int gate);
     void insert_fault(int mode, int id);
+    void add_xor_gates(vector<int> out);
     void print_circuit();
 };
 
