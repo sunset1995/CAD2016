@@ -162,7 +162,6 @@ Circuit join(const Circuit &a, const Circuit &b)
                 if(b.circuit[in1].mode!=0) in1=-(in1+1);
                 if(in2>0&&b.circuit[in2].mode!=0) in2=-(in2+1);
             }
-            printf("insert %d %d %d %d\n", mode, in1, in2, out);
             miter.insert_gate(mode, in1, in2, out);
             if(cur_node.sa0) miter.insert_fault(0, out);
             if(cur_node.sa1) miter.insert_fault(1, out);

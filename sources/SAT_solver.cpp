@@ -11,6 +11,8 @@ bool SAT_solver(vector< vector<int> > clauses, int n) {
     vector< vec<Lit> > lits(clauses.size());
     for(int i=0,v; i<clauses.size(); ++i) {
         vector<int> &nowClause = clauses[i];
+        if( nowClause.size()==0 )
+            puts("FUCK");
         for(int j=0; j<nowClause.size(); ++j) {
             lits[i].push( mkLit(abs(nowClause[j])-1, nowClause[j]<0) );
         }

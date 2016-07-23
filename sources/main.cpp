@@ -19,14 +19,12 @@ int main(int argv, char **argc) {
         return 1;
     }
 
-    //freopen("identical_fault_pairs.txt", "w", stdout);
-
     ISC_parser testdata;
 
     Circuit ori_cir = testdata.parse_isc_file(argc[1]);
     Fault faults = testdata.parse_fault_file(argc[2]);
 
-    //faults.heuristicSort();
+    ori_cir.dfs();
 
     clock_t sat_time = 0;
     vector<bool> done(faults.size(), false);
