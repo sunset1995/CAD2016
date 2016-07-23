@@ -31,6 +31,7 @@ void Circuit::insert_output(int out)// to record which gates are primary outputs
 {
     out=gate_trans(out);
     output.push_back(out);
+    circuit[out].PO=output.size()-1;
     //circuit[out]
 }
 
@@ -51,7 +52,7 @@ void Circuit::insert_gate(int mode, int in1, int in2, int out)
     n.in2=in2;
     n.out=out;
     n.neg=n.sa0=n.sa1=0;
-
+    n.PO=circuit[out].PO;
     //circuit.push_back(n);
     circuit[out]=n;
 }
@@ -71,27 +72,52 @@ void Circuit::insert_fault(int mode, int id)
         else if(mode==10){// negation
             circuit[id].neg=1;
         }
-        if(mode==0 || mode==1){//stuck at 0 or 1
+        if(mode==0 || mode==1 || mode==10){//stuck at 0 or 1 or neg
             if(circuit[id].mode==0){//primary input
+                //add a new buff gate
                 node n;
                 n.in1=id;
                 n.in2=-1;
                 n.out=cnt+1;
+                fault_id=cnt+1;
                 n.mode=8;
                 if(mode==0) n.sa0=1;
-                else n.sa1=1;
+                else if(mode==1) n.sa1=1;
+                else if(mode==10) n.neg=1;
                 circuit.push_back(n);
                 cnt++;
+                gate_cnt++;
+                circuit[id].sa0=circuit[id].sa1=circuit[id].neg=0;
+                //to broadcast all the fanout gates to change its input id to buff's
                 for(int i=1;i<cnt;i++){
                     if(circuit[i].in1==id) circuit[i].in1=n.out;
                     if(circuit[i].in2==id) circuit[i].in2=n.out;
                 }
-                circuit[id].sa0=circuit[id].sa1=0;
+                //to broadcast all the fanout POs to insert this buff gate as its upstream
+                //to tell this buff gate which POs it will influence
                 unordered_set<int>::iterator it;
                 for(it=circuit[id].fanout.begin();it!=circuit[id].fanout.end();it++){
                     int fout=*it;
                     circuit[cnt].fanout.insert(fout);
                     circuit[fout].fanin.insert(cnt);
+                }
+                //if it's also a primary output
+                //the new PO will be this buff gate
+                if(circuit[id].PO!=-1){
+                    int index=circuit[id].PO;
+                    output[index]=cnt;//replace
+                    for(it=circuit[id].fanout.begin();it!=circuit[id].fanout.end();it++){
+                        if(*it==id){
+                            circuit[id].fanout.erase(*it);
+                            circuit[id].fanout.insert(cnt);
+                            break;
+                        }
+                    }
+                    circuit[cnt].fanin=circuit[id].fanin;
+                    circuit[id].fanin.clear();
+                    circuit[cnt].fanout=circuit[id].fanout;
+                    circuit[cnt].PO=circuit[id].PO;
+                    circuit[id].PO=-1;
                 }
             }
         }
@@ -138,11 +164,10 @@ void Circuit::add_xor_gates(vector<int> out)
 
 void Circuit::print_circuit()
 {
-    unordered_set<int>::iterator it;
+    set<int>::iterator it;
     printf("cnt=%d input_cnt=%d gate_cnt=%d\n", cnt, input_cnt, gate_cnt);
-    printf("circuit.size=%d\n", circuit.size());
     for(int i=1;i<circuit.size();i++){
-        printf("mode=%d in1=%d in2=%d out=%d neg=%d sa0=%d sa1=%d i=%d\n", circuit[i].mode, circuit[i].in1, circuit[i].in2, circuit[i].out, circuit[i].neg, circuit[i].sa0, circuit[i].sa1, i);
+        printf("mode=%d in1=%d in2=%d out=%d neg=%d sa0=%d sa1=%d PO=%d\n", circuit[i].mode, circuit[i].in1, circuit[i].in2, circuit[i].out, circuit[i].neg, circuit[i].sa0, circuit[i].sa1, circuit[i].PO);
         /*printf("fanin: ");
         for(it=circuit[i].fanin.begin();it!=circuit[i].fanin.end();it++) printf("%d ", *it);
         printf("\nfanout: ");
