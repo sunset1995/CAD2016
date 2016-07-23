@@ -41,9 +41,10 @@ struct node
     bool neg;
     bool sa0;
     bool sa1;
+    int PO;//the index in output vector. if it isn't PO, than -1
     unordered_set<int> fanin;//if it is a PO node, which node will affect it?
     unordered_set<int> fanout;//this node will affect which PO node?
-    node(){neg=sa0=sa1=0;
+    node(){neg=sa0=sa1=0;PO=-1;
     fanin.clear();
     fanout.clear();}
 };
