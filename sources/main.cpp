@@ -19,7 +19,7 @@ int main(int argv, char **argc) {
         return 1;
     }
 
-    freopen("identical_fault_pairs.txt", "w", stdout);
+    //freopen("identical_fault_pairs.txt", "w", stdout);
 
     ISC_parser testdata;
 
@@ -29,13 +29,13 @@ int main(int argv, char **argc) {
     //faults.heuristicSort();
 
     clock_t sat_time = 0;
-    int cnt = 0, grounp_cnt = 0;
+    vector<bool> done(faults.size(), false);
+    int cnt = 0, grounp_cnt = (int)faults.size();
 
     for(int i=faults.size()-1; i>=0; --i) {
-        if( faults.find(i)!=i )
+        if( done[i] )
             continue;
-        
-        ++grounp_cnt;
+        done[i] = true;
 
         int mode = faults.getMode(i);
         int id = faults.getNet(i);
@@ -44,7 +44,7 @@ int main(int argv, char **argc) {
         cir_1.insert_fault(mode, id);
         
         for(int j=i-1; j>=0; --j) {
-            if( faults.find(j)!=j )
+            if( done[j] || faults.find(i)==faults.find(j) )
                 continue;
 
             ++cnt;
@@ -55,8 +55,11 @@ int main(int argv, char **argc) {
             cir_2.insert_fault(mode, id);
 
             clock_t t = clock();
-            if( beq(cir_1, cir_2) )
+            if( beq(cir_1, cir_2) ) {
                 faults.join(i, j);
+                done[j] = true;
+                --grounp_cnt;
+            }
             sat_time += clock() - t;
         }
     }

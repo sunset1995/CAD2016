@@ -87,7 +87,7 @@ void Circuit::insert_fault(int mode, int id)
                     if(circuit[i].in2==id) circuit[i].in2=n.out;
                 }
                 circuit[id].sa0=circuit[id].sa1=0;
-                set<int>::iterator it;
+                unordered_set<int>::iterator it;
                 for(it=circuit[id].fanout.begin();it!=circuit[id].fanout.end();it++){
                     int fout=*it;
                     circuit[cnt].fanout.insert(fout);
@@ -138,7 +138,7 @@ void Circuit::add_xor_gates(vector<int> out)
 
 void Circuit::print_circuit()
 {
-    set<int>::iterator it;
+    unordered_set<int>::iterator it;
     printf("cnt=%d input_cnt=%d gate_cnt=%d\n", cnt, input_cnt, gate_cnt);
     printf("circuit.size=%d\n", circuit.size());
     for(int i=1;i<circuit.size();i++){

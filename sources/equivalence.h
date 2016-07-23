@@ -7,7 +7,7 @@ Circuit equvalence checking
 
 #include <cstdio>
 #include <cstdlib>
-#include <map>
+#include <unordered_set>
 #include <vector>
 #include "sources/circuit.h"
 #include "sources/SAT_solver.h"
@@ -16,13 +16,7 @@ using namespace std;
 
 vector< vector<int> > convert(node n); //convert a gate expression to a cnf expression
 
-// Get nowAt nds signal
-// (an assignment of input, current nodes state, circuit)
-bool getSignal(vector<char> &nds, const Circuit &cir, int nowAt);
-
-bool randomInputTest(const Circuit &a, const Circuit &b);
-
-Circuit join(const Circuit &a, const Circuit &b)
+Circuit join(const Circuit &a, const Circuit &b);
 
 bool beq(const Circuit &a, const Circuit &b);
 

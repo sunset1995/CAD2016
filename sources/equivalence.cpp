@@ -100,80 +100,13 @@ vector< vector<int> > convert(node n) //convert a gate expression to a cnf expre
     return ret;
 }
 
-bool getSignal(vector<char> &nds, const Circuit &cir, int nowAt) {
-    if( nds[nowAt]==0 ) return false;
-    if( nds[nowAt]==1 ) return true;
-
-    if( cir.circuit[nowAt].sa0 ) {
-        nds[nowAt] = 0;
-        return false;
-    }
-
-    if( cir.circuit[nowAt].sa1 ) {
-        nds[nowAt] = 1;
-        return true;
-    }
-
-    int mode = cir.circuit[nowAt].mode;
-    int in1 = cir.circuit[nowAt].in1;
-    int in2 = cir.circuit[nowAt].in2;
-    bool neg = cir.circuit[nowAt].neg;
-
-    // buff/not
-    if( in2 == -1 ) {
-        nds[nowAt] = getSignal(nds, cir, in1);
-        nds[nowAt] ^= neg;
-        return nds[nowAt];
-    }
-
-    bool res_1 = getSignal(nds, cir, in1);
-    bool res_2 = getSignal(nds, cir, in2);
-
-    if( mode==2 )
-        nds[nowAt] = res_1 & res_2;
-    else if( mode==3 )
-        nds[nowAt] = !(res_1 & res_2);
-    else if( mode==4 )
-        nds[nowAt] = res_1 | res_2;
-    else if( mode==5 )
-        nds[nowAt] = !(res_1 | res_2);
-    else if( mode==6 )
-        nds[nowAt] = res_1 ^ res_2;
-    else if( mode==7 )
-        nds[nowAt] = !(res_1 ^ res_2);
-
-    nds[nowAt] ^= neg;
-
-    return nds[nowAt];
-}
-
-bool randomInputTest(const Circuit &a, const Circuit &b) {
-    /*
-    *   return true if pass test
-    */
-
-    // 0 low; 1 hight; 2 undetermined
-    vector<char> nds_1(a.cnt, 2);
-    vector<char> nds_2(b.cnt, 2);
-
-    for(int i=0; i<a.cnt; ++i)
-        if( a.circuit[i].mode == 0 )
-            nds_1[i] = nds_2[i] = (rand()&1);
-
-    for(int i=0; i<a.output.size(); ++i)
-        if( getSignal(nds_1, a, a.output[i]) != getSignal(nds_2, b, b.output[i]) )
-            return false;
-
-    return true;
-}
-
 Circuit join(const Circuit &a, const Circuit &b)
 {
-    set<int> PO;
-    set<int> upstream;
-    set<int>::iterator it;
-    set<int>::iterator PO_it;
-    set<int>::iterator upstream_it;
+    unordered_set<int> PO;
+    unordered_set<int> upstream;
+    unordered_set<int>::iterator it;
+    unordered_set<int>::iterator PO_it;
+    unordered_set<int>::iterator upstream_it;
     node fault_node;
     node PO_node;
     node cur_node;
@@ -242,10 +175,6 @@ Circuit join(const Circuit &a, const Circuit &b)
 
 bool beq(const Circuit &a, const Circuit &b)
 {
-    for(int i=0; i<5; ++i)
-        if( !randomInputTest(a, b) )
-            return false;
-
     Circuit miter=join(a, b);
 
     //add external xor gates

@@ -25,7 +25,9 @@ Fault mode definitons:
 #define CIRCUIT_H_INCLUDED
 
 #include <cstdio>
-#include <map>
+#include <unordered_set>
+#include <unordered_map>
+#include <stack>
 #include <vector>
 
 using namespace std;
@@ -39,8 +41,8 @@ struct node
     bool neg;
     bool sa0;
     bool sa1;
-    set<int> fanin;//if it is a PO node, which node will affect it?
-    set<int> fanout;//this node will affect which PO node?
+    unordered_set<int> fanin;//if it is a PO node, which node will affect it?
+    unordered_set<int> fanout;//this node will affect which PO node?
     node(){neg=sa0=sa1=0;
     fanin.clear();
     fanout.clear();}
@@ -51,7 +53,7 @@ class Circuit
 public:
     vector<node> circuit; // store all nodes
     vector<int> output; // which nodes are output?
-    map<int, int> mp;
+    unordered_map<int, int> mp;
     int cnt;
     int input_cnt;
     int gate_cnt;
