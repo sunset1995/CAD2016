@@ -133,18 +133,21 @@ Circuit join(const Circuit &a, const Circuit &b)
         // to make a upstream set
         for(PO_it=PO.begin();PO_it!=PO.end();PO_it++){
             id=*PO_it;
-            if(id<=cnt){//this id maybe circuit_b's PI stuck buff gate, we don't insert it
-                if(i==0){
-                    PO_node=a.circuit[id];
-                    miter.insert_output(id);
-                }
-                else{
-                    PO_node=b.circuit[id];
-                    miter.insert_output(-(id+1));
-                }
-                for(upstream_it=PO_node.fanin.begin();upstream_it!=PO_node.fanin.end();upstream_it++){
-                    upstream.insert(*upstream_it);
-                }
+            if(id>cnt){ //this id maybe another circuit's PI stuck buff gate, we take its origin signal
+                if(i==0) id=b.circuit[id].in1;
+                else id=a.circuit[id].in1;
+            }
+            if(i==0){
+                PO_node=a.circuit[id];
+                miter.insert_output(id);
+            }
+            else{
+                PO_node=b.circuit[id];
+                if(PO_node.mode==0) miter.insert_output(id);
+                else miter.insert_output(-(id+1));
+            }
+            for(upstream_it=PO_node.fanin.begin();upstream_it!=PO_node.fanin.end();upstream_it++){
+                upstream.insert(*upstream_it);
             }
         }
         //insert all the upstream nodes
