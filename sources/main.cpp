@@ -56,6 +56,26 @@ int main(int argv, char **argc) {
 
     ori_cir.dfs();
 
+
+    // Find all trush fault(same as ori_cir)
+    vector<int> trash;
+    for(int i=0; i<faults.size(); ++i) {
+        Circuit cir_1 = ori_cir;
+        Circuit cir_2 = ori_cir;
+        cir_2.insert_fault(faults[i].mode, faults[i].net);
+
+        if( beq(cir_1, cir_2) )
+            trash.emplace_back(i);
+    }
+    if( trash.size() ) {
+        for(int i=1; i<trash.size(); ++i)
+            faults.setSame(trash[0], trash[i]);
+        for(int i=0; i<faults.size(); ++i)
+            if( !faults.same(trash[0], i) )
+                faults.setDiff(trash[0], i);
+    }
+
+
     // Greedy partition falut into multiple slot
     vector< vector<int> > slot;
     const vector<node> &cir = ori_cir.circuit;
@@ -92,14 +112,17 @@ int main(int argv, char **argc) {
     // Compare faluts inside one slot
     for(const auto &vec : slot)
         compare_all(ori_cir, faults, vec);
-    slot.clear();
 
 
     // Compare all group
-    vector<int> universe_slot(faults.size());
-    for(int i=0; i<faults.size(); ++i)
-        universe_slot[i] = i;
+    /*
+    vector<int> universe_slot;
+    universe_slot.reserve(faults.size());
+    for(const auto &vec : slot)
+        for(int i=0; i<vec.size(); ++i)
+            universe_slot.emplace_back(vec[i]);
     compare_all(ori_cir, faults, universe_slot);
+    */
 
 
     // Print result
