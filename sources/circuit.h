@@ -35,8 +35,9 @@ using namespace std;
 struct node
 {
     int mode;
-    int in1;
-    int in2;
+    int in1;//if it's dff, in1 is rst
+    int in2;//if it's dff, in2 is enable
+    int din;//if it's dff, din is D
     int out;
     bool neg;
     bool sa0;
@@ -59,6 +60,7 @@ public:
     int input_cnt;
     int gate_cnt;
     int fault_id;
+    bool seq;//if it's a sequential circuit
     Circuit();
     void init();
     void insert_gate(int mode, int in1, int in2, int out);
