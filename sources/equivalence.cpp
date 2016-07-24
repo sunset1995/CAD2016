@@ -100,6 +100,67 @@ vector< vector<int> > convert(node n) //convert a gate expression to a cnf expre
     return ret;
 }
 
+bool SEQ_SAT(Circuit CCT, vector< vector<int> > CNF, int N)
+{
+    vector<bool> state;
+    unordered_set< vector<bool> > st;
+    vector< vector<int> > cnf=CNF;
+    vector<int> qout;//all ppi index
+    vector<int> din;//all ppo index
+    vector<int> tmp;
+    vector<bool> sat;
+    qout=CCT.dff;
+    for(int i=0;i<qout.size();i++){
+        int index=qout[i];
+        din.push_back(CCT.circuit[index].din);
+    }
+    //test if the reset state will sat
+    for(int i=0;i<qout.size();i++){
+        tmp.clear();
+        tmp.push_back(-qout[i]);
+        cnf.push_back(tmp);
+    }
+    if(SAT_solver(cnf, N).size()>0) return 1;
+    //tuei r chiu chi tz
+    for(int i=0;i<qout.size();i++) cnf.pop_back();
+    sat=SAT_solver(cnf, N);
+    if(sat.size()==0) return 0;
+    state.clear();
+    for(int i=0;i<qout.size();i++){
+        int id=qout[i];
+        state.push_back(sat[id]);
+    }
+    //po don't necessary 1
+    cnf.pop_back();
+    //trace back
+    while(st.find(state)==st.end()){
+        st.insert(state);
+        for(int i=0;i<din.size();i++){
+            tmp.clear();
+            if(state[i]) tmp.push_back(din[i]);
+            else tmp.push_back(-din[i]);
+            cnf.push_back(tmp);
+        }
+        //test if the reset state will sat
+        for(int i=0;i<qout.size();i++){
+            tmp.clear();
+            tmp.push_back(-qout[i]);
+            cnf.push_back(tmp);
+        }
+        if(SAT_solver(cnf, N).size()>0) return 1;
+        //tuei r chiu chi tz
+        for(int i=0;i<qout.size();i++) cnf.pop_back();
+        sat=SAT_solver(cnf, N);
+        if(sat.size()==0) return 0;
+        state.clear();
+        for(int i=0;i<qout.size();i++){
+            int id=qout[i];
+            state.push_back(sat[id]);
+        }
+    }
+    return 0;
+}
+
 Circuit join(const Circuit &a, const Circuit &b)
 {
     unordered_set<int> PO;
@@ -110,7 +171,7 @@ Circuit join(const Circuit &a, const Circuit &b)
     node fault_node;
     node PO_node;
     node cur_node;
-    int in1, in2, out, mode;
+    int in1, in2, din, out, mode;
     int id;
     fault_node=a.circuit[a.fault_id];
 
@@ -158,20 +219,22 @@ Circuit join(const Circuit &a, const Circuit &b)
             else cur_node=b.circuit[out];
             in1=cur_node.in1;
             in2=cur_node.in2;
+            din=cur_node.din;
             mode=cur_node.mode;
             if(i==1){
                 if(mode==0) continue;
                 out=-(out+1);
                 if(b.circuit[in1].mode!=0) in1=-(in1+1);
                 if(in2>0&&b.circuit[in2].mode!=0) in2=-(in2+1);
+                if(din>0&&b.circuit[din].mode!=0) din=-(din+1);
             }
-            miter.insert_gate(mode, in1, in2, out);
+            miter.insert_gate(mode, in1, in2, din, out);
             if(cur_node.sa0) miter.insert_fault(0, out);
             if(cur_node.sa1) miter.insert_fault(1, out);
             if(cur_node.neg) miter.insert_fault(10, out);
         }
     }
-
+    if(a.seq) miter.seq=1;
     return miter;
 }
 
@@ -197,5 +260,6 @@ bool beq(const Circuit &a, const Circuit &b)
     }
     cnf.push_back(sum);
 
-    return !SAT_solver(cnf, miter.cnt);
+   if(miter.seq==0) return SAT_solver(cnf, miter.cnt).size()==0;
+   else return !SEQ_SAT(miter, cnf, miter.cnt);
 }
