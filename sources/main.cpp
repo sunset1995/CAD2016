@@ -26,39 +26,28 @@ int main(int argv, char **argc) {
 
     ori_cir.dfs();
 
-    clock_t sat_time = 0;
-    vector<bool> done(faults.size(), false);
-    int cnt = 0, grounp_cnt = (int)faults.size();
-
     for(int i=faults.size()-1; i>=0; --i) {
-        if( done[i] )
-            continue;
-        done[i] = true;
 
-        int mode = faults.getMode(i);
-        int id = faults.getNet(i);
+        int mode = faults[i].mode;
+        int net = faults[i].net;
 
         Circuit cir_1 = ori_cir;
-        cir_1.insert_fault(mode, id);
+        cir_1.insert_fault(mode, net);
         
         for(int j=i-1; j>=0; --j) {
-            if( done[j] || faults.find(i)==faults.find(j) )
+            if( faults.same(i, j) || faults.diff(i, j) )
                 continue;
 
-            ++cnt;
-            mode = faults.getMode(j);
-            id = faults.getNet(j);
+            mode = faults[j].mode;
+            net = faults[j].net;
             
             Circuit cir_2 = ori_cir;
-            cir_2.insert_fault(mode, id);
+            cir_2.insert_fault(mode, net);
 
-            clock_t t = clock();
-            if( beq(cir_1, cir_2) ) {
-                faults.join(i, j);
-                done[j] = true;
-                --grounp_cnt;
-            }
-            sat_time += clock() - t;
+            if( beq(cir_1, cir_2) )
+                faults.setSame(i, j);
+            else
+                faults.setDiff(i, j);
         }
     }
 
@@ -66,8 +55,5 @@ int main(int argv, char **argc) {
     for(int i=0; i<ans.size(); ++i)
         printf("%d %d\n", ans[i].first, ans[i].second);
 
-    printf("group num %d\n", grounp_cnt);
-    //printf("call SAT_solver %d times\n", cnt);
-    //printf("Time for SAT_solver %.2fs\n", (double)sat_time / CLOCKS_PER_SEC);
     return 0;
 }

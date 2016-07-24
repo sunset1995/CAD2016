@@ -1,35 +1,55 @@
 #include "sources/fault.h"
 
 void Fault::addFault(int _id, int _net, const char *_mode) {
-    faults.push_back({
-        _id,
-        _net,
-        faultName2faultMode(_mode),
-        0
-    });
-    faults.back().group = faults.size() - 1;
+    fault now;
+    now.fid = _id;
+    now.net = _net;
+    now.mode = faultName2faultMode(_mode);
+    now.group = faults.size();
+    now.minfid = _id;
+    faults.emplace_back(now);
 }
 
-int Fault::find(int id) {
-    return (faults[id].group==id)? id : (faults[id].group = find(faults[id].group));
+int Fault::group(int i) {
+    if( faults[i].group==i )
+        return i;
+    return faults[i].group = group(faults[i].group);
 }
 
-void Fault::join(int a, int b) {
-    a = find(a);
-    b = find(b);
-    if( faults[a].id < faults[b].id )
-        faults[b].group = a;
-    else
-        faults[a].group = b;
+bool Fault::same(int a, int b) {
+    return group(a)==group(b);
+}
+
+bool Fault::diff(int a, int b) {
+    a = group(a);
+    b = group(b);
+    return faults[a].diff.find(b)!=faults[a].diff.end();
+}
+
+void Fault::setSame(int a, int b) {
+    a = group(a);
+    b = group(b);
+    faults[b].group = a;
+    faults[a].minfid = min(faults[a].minfid, faults[b].minfid);
+    for(auto id : faults[b].diff)
+        faults[a].diff.insert(id);
+    faults[b].diff.clear();
+}
+
+void Fault::setDiff(int a, int b) {
+    a = group(a);
+    b = group(b);
+    faults[a].diff.insert(b);
+    faults[b].diff.insert(a);
 }
 
 vector< pair<int,int> > Fault::result() {
     vector< pair<int,int> > ret;
     ret.reserve(size());
-    for(int i=0,root; i<size(); ++i) {
-        root = find(i);
-        if( i!=root )
-            ret.push_back({faults[root].id, faults[i].id});
+    for(int i=0; i<size(); ++i) {
+        int minfid = faults[group(i)].minfid;
+        if( faults[i].fid != minfid )
+            ret.push_back({minfid, faults[i].fid});
     }
     sort(ret.begin(), ret.end());
     return ret;

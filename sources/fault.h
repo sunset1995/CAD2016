@@ -5,6 +5,7 @@
 #include <vector>
 #include <algorithm>
 #include <cstdlib>
+#include <unordered_set>
 using namespace std;
 
 class Fault {
@@ -13,45 +14,34 @@ public:
         faults.reserve(4096);
     }
 
+    struct fault {
+        int fid, net, mode, group, minfid;
+        unordered_set<int> diff;
+    };
+    vector<fault> faults;
+
     inline int size() {
         return faults.size();
     }
 
-    inline int getNet(int id) const {
-        return faults[id].net;
-    }
-
-    inline int getMode(int id) const {
-        return faults[id].mode;
-    }
-
-    inline void heuristicSort() {
-        for(int i=0; i<2000; ++i) {
-            int a = rand() % size();
-            int b = rand() % size();
-            swap(faults[a], faults[b]);
-        }
+    fault& operator [] (const int id) {
+        return faults[id];
     }
 
     // fault id, net id, fault name
     void addFault(int, int, const char*);
 
-    // implemented disjoint set
-    int find(int);
-    void join(int, int);
+    // fault operation
+    int group(int);
+    bool same(int, int);
+    bool diff(int, int);
+    void setSame(int, int);
+    void setDiff(int, int);
     
     // return final fault group result
     vector< pair<int,int> > result();
+
 private:
-    // fault id ; net id ; fault mode
-    struct fault {
-        int id, net, mode, group;
-    };
-    vector<fault> faults;
-
-    // for disjoint set
-    vector<int> group;
-
     // conver fault name(str) to fault id(int)
     int faultName2faultMode(const char*);
 };
