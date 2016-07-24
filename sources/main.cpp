@@ -10,6 +10,36 @@
 
 using namespace Minisat;
 
+void compare_all(const Circuit &ori_cir, Fault &faults, const vector<int> &slot) {
+
+    for(int i=0; i<slot.size(); ++i) {
+
+        int mode = faults[slot[i]].mode;
+        int net = faults[slot[i]].net;
+
+        Circuit cir_1 = ori_cir;
+        cir_1.insert_fault(mode, net);
+        
+        for(int j=i+1; j<slot.size(); ++j) {
+            if( faults.same(slot[i], slot[j]) || faults.diff(slot[i], slot[j]) )
+                continue;
+
+            mode = faults[slot[j]].mode;
+            net = faults[slot[j]].net;
+            
+            Circuit cir_2 = ori_cir;
+            cir_2.insert_fault(mode, net);
+
+            if( beq(cir_1, cir_2) )
+                faults.setSame(slot[i], slot[j]);
+            else
+                faults.setDiff(slot[i], slot[j]);
+        }
+
+    }
+
+}
+
 int main(int argv, char **argc) {
     
     srand(time(NULL));
@@ -26,31 +56,53 @@ int main(int argv, char **argc) {
 
     ori_cir.dfs();
 
-    for(int i=faults.size()-1; i>=0; --i) {
+    // Greedy partition falut into multiple slot
+    vector< vector<int> > slot;
+    const vector<node> &cir = ori_cir.circuit;
 
-        int mode = faults[i].mode;
-        int net = faults[i].net;
+    for(int i=0; i<faults.size(); ++i) {
 
-        Circuit cir_1 = ori_cir;
-        cir_1.insert_fault(mode, net);
-        
-        for(int j=i-1; j>=0; --j) {
-            if( faults.same(i, j) || faults.diff(i, j) )
-                continue;
+        int id1 = ori_cir.gate_trans(faults[i].net);
+        int sid = -1;
 
-            mode = faults[j].mode;
-            net = faults[j].net;
+        for(int j=0; j<slot.size() && sid==-1; ++j) {
             
-            Circuit cir_2 = ori_cir;
-            cir_2.insert_fault(mode, net);
+            int id2 = ori_cir.gate_trans(faults[slot[j][0]].net);
+            sid = j;
 
-            if( beq(cir_1, cir_2) )
-                faults.setSame(i, j);
-            else
-                faults.setDiff(i, j);
+            if( cir[id1].fanout.size() != cir[id2].fanout.size() ) {
+                sid = -1;
+                continue;
+            }
+            for(auto out : cir[id1].fanout)
+                if( cir[id2].fanout.find(out) == cir[id2].fanout.end() ) {
+                    sid = -1;
+                    break;
+                }
         }
+
+        if( sid==-1 )
+            slot.push_back({i});
+        else
+            slot[sid].push_back(i);
+
     }
 
+
+    // Compare faluts inside one slot
+    for(const auto &vec : slot)
+        compare_all(ori_cir, faults, vec);
+    slot.clear();
+
+
+    // Compare all group
+    vector<int> universe_slot(faults.size());
+    for(int i=0; i<faults.size(); ++i)
+        universe_slot[i] = i;
+    compare_all(ori_cir, faults, universe_slot);
+
+
+    // Print result
     vector< pair<int,int> > ans = faults.result();
     for(int i=0; i<ans.size(); ++i)
         printf("%d %d\n", ans[i].first, ans[i].second);
