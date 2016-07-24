@@ -64,7 +64,7 @@ public:
     bool seq;//if it's a sequential circuit
     Circuit();
     void init();
-    void insert_gate(int mode, int in1, int in2, int out);
+    void insert_gate(int mode, int in1, int in2, int din, int out);
     void insert_output(int out);
     void dfs();
     int gate_trans(int gate);
