@@ -11,9 +11,11 @@ void Circuit::init()
     node n;
     circuit.push_back(n);
     mp.clear();
+    dff.clear();
     input_cnt=0;
     gate_cnt=0;
     cnt=0;
+    seq=0;
 }
 
 int Circuit::gate_trans(int gate)// to map the node id to an interger
@@ -35,7 +37,7 @@ void Circuit::insert_output(int out)// to record which gates are primary outputs
     //circuit[out]
 }
 
-void Circuit::insert_gate(int mode, int in1, int in2, int out)
+void Circuit::insert_gate(int mode, int in1, int in2, int din, int out)
 {
     if(mode==1){
         insert_output(out);
@@ -45,16 +47,22 @@ void Circuit::insert_gate(int mode, int in1, int in2, int out)
     else gate_cnt++;
     in1=gate_trans(in1);
     in2=gate_trans(in2);
+    din=gate_trans(din);
     out=gate_trans(out);
     node n;
     n.mode=mode;
     n.in1=in1;
     n.in2=in2;
+    n.din=din;
     n.out=out;
     n.neg=n.sa0=n.sa1=0;
     n.PO=circuit[out].PO;
     //circuit.push_back(n);
     circuit[out]=n;
+    if(mode==10){
+        seq=1;//it's a sequential circuit
+        dff.push_back(out);
+    }
 }
 
 void Circuit::insert_fault(int mode, int id)
@@ -140,8 +148,10 @@ void Circuit::dfs()
             circuit[cur].fanout.insert(index);
             int n1=circuit[cur].in1;
             int n2=circuit[cur].in2;
+            int n3=circuit[cur].din;
             if(n1>0) s.push(n1);
             if(n2>0) s.push(n2);
+            if(n3>0) s.push(n3);
         }
     }
 }
@@ -164,15 +174,18 @@ void Circuit::add_xor_gates(vector<int> out)
 
 void Circuit::print_circuit()
 {
-    unordered_set<int>::iterator it;
+    set<int>::iterator it;
     printf("cnt=%d input_cnt=%d gate_cnt=%d\n", cnt, input_cnt, gate_cnt);
     for(int i=1;i<circuit.size();i++){
-        printf("mode=%d in1=%d in2=%d out=%d neg=%d sa0=%d sa1=%d PO=%d\n", circuit[i].mode, circuit[i].in1, circuit[i].in2, circuit[i].out, circuit[i].neg, circuit[i].sa0, circuit[i].sa1, circuit[i].PO);
+        printf("mode=%d in1=%d in2=%d din=%d out=%d neg=%d sa0=%d sa1=%d PO=%d\n", circuit[i].mode, circuit[i].in1, circuit[i].in2, circuit[i].din, circuit[i].out, circuit[i].neg, circuit[i].sa0, circuit[i].sa1, circuit[i].PO);
         /*printf("fanin: ");
         for(it=circuit[i].fanin.begin();it!=circuit[i].fanin.end();it++) printf("%d ", *it);
         printf("\nfanout: ");
         for(it=circuit[i].fanout.begin();it!=circuit[i].fanout.end();it++) printf("%d ", *it);
         puts("");*/
+    }
+    for(int i=0;i<dff.size();i++){
+        printf("dff %d\n", dff[i]);
     }
     for(int i=0;i<output.size();i++){
         printf("output %d\n", output[i]);
