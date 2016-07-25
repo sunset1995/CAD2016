@@ -1,20 +1,18 @@
 #include "sources/SAT_solver.h"
 
-bool SAT_solver(vector< vector<int> > clauses, int n) {
+vector<bool> SAT_solver(vector< vector<int> > clauses, int n) {
 
 
     Solver S;
 
     // Setting CNF formular
-    while(n > S.nVars())
+    while(n+1 > S.nVars())
         S.newVar();
     vector< vec<Lit> > lits(clauses.size());
     for(int i=0,v; i<clauses.size(); ++i) {
         vector<int> &nowClause = clauses[i];
-        if( nowClause.size()==0 )
-            puts("FUCK");
         for(int j=0; j<nowClause.size(); ++j) {
-            lits[i].push( mkLit(abs(nowClause[j])-1, nowClause[j]<0) );
+            lits[i].push( mkLit(abs(nowClause[j]), nowClause[j]<0) );
         }
 
         if( lits[i].size()==1 )
@@ -27,19 +25,24 @@ bool SAT_solver(vector< vector<int> > clauses, int n) {
             S.addClause(lits[i]);
     }
 
+
+    vector<bool> result;
+
     // Try to solve via simplify
     if (!S.simplify())
-        return false;
+        return result;
 
     // Solve
     vec<Lit> dummy;
     lbool ret = S.solveLimited(dummy);
 
-    // Return result
-    if( ret==l_True )
-        return true;
-    else if( ret==l_False )
-        return false;
-    else
-        return false; // Indeterminate
+    // Result
+    if( ret==l_True ) {
+        result.resize(n+1);
+        for (int i=0; i<=n; i++)
+            result[i] = (S.model[i] == l_True);
+    }
+    
+    return result;
+
 }

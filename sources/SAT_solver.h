@@ -3,6 +3,7 @@
 
 #include <ctime>
 #include <vector>
+#include <algorithm>
 #include <errno.h>
 #include <zlib.h>
 using namespace std;
@@ -21,6 +22,6 @@ using namespace Minisat;
     Each clause store in vector<int>.
     All variable id from 1~N, negative means invert.
 */
-bool SAT_solver(vector< vector<int> >, int);
+vector<bool> SAT_solver(vector< vector<int> >, int);
 
 #endif

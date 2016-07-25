@@ -197,5 +197,5 @@ bool beq(const Circuit &a, const Circuit &b)
     }
     cnf.push_back(sum);
 
-    return !SAT_solver(cnf, miter.cnt);
+    return SAT_solver(cnf, miter.cnt).empty();
 }
