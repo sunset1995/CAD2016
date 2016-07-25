@@ -174,7 +174,7 @@ void Circuit::add_xor_gates(vector<int> out)
 
 void Circuit::print_circuit()
 {
-    set<int>::iterator it;
+    unordered_set<int>::iterator it;
     printf("cnt=%d input_cnt=%d gate_cnt=%d\n", cnt, input_cnt, gate_cnt);
     for(int i=1;i<circuit.size();i++){
         printf("mode=%d in1=%d in2=%d din=%d out=%d neg=%d sa0=%d sa1=%d PO=%d\n", circuit[i].mode, circuit[i].in1, circuit[i].in2, circuit[i].din, circuit[i].out, circuit[i].neg, circuit[i].sa0, circuit[i].sa1, circuit[i].PO);
