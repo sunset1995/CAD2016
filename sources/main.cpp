@@ -2,13 +2,16 @@
 #include <vector>
 #include <ctime>
 #include <cstdlib>
+#include <algorithm>
 #include "sources/circuit.h"
 #include "sources/equivalence.h"
 #include "sources/fault.h"
 #include "sources/parser.h"
 #include "sources/SAT_solver.h"
+#include "sources/simulator.h"
 
 using namespace Minisat;
+
 
 void compare_all(const Circuit &ori_cir, Fault &faults, const vector<int> &slot) {
 
@@ -40,6 +43,84 @@ void compare_all(const Circuit &ori_cir, Fault &faults, const vector<int> &slot)
 
 }
 
+
+void procTrashFault(const Circuit &ori_cir, Fault &faults, vector<bool> &trash) {
+    // Find all trush fault(same as ori_cir)
+    int trashLeader = -1;
+    for(int i=0; i<faults.size(); ++i) {
+        Circuit cir = ori_cir;
+        cir.insert_fault(faults[i].mode, faults[i].net);
+
+        if( beq(ori_cir, cir) ) {
+            trash[i] = true;
+            if( trashLeader==-1 )
+                trashLeader = i;
+        }
+    }
+    if( trashLeader!=-1 ) {
+        for(int i=0; i<faults.size(); ++i) {
+            if( trash[i] )
+                faults.setSame(trashLeader, i);
+            else
+                faults.setDiff(trashLeader, i);
+        }
+    }
+}
+
+
+void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, const vector<bool> &trash) {
+    
+    vector< vector<int> > slot(1);
+    
+    // Init
+    for(int i=0; i<faults.size(); ++i)
+        if( !trash[i] )
+            slot[0].emplace_back(i);
+
+    // Run simulation test
+    for(int __cnt=0; __cnt<20; ++__cnt) {
+        vector<bool> input(ori_cir.input_cnt);
+        for(int i=0; i<input.size(); ++i)
+            input[i] = (rand()&1);
+        int to = slot.size();
+        for(int i=0; i<to; ++i) {
+
+            if( slot[i].size()<2 )
+                continue;
+
+            // pick slot[i][0] as leader
+            Circuit cir = ori_cir;
+            cir.insert_fault(faults[slot[i][0]].mode, faults[slot[i][0]].net);
+
+            vector<bool> leaderBits = simulate(cir, input);
+            
+            // all fault different from leader must exit
+            vector<int> byebye;
+            for(int j=1,top=1; j<slot[i].size(); ++j) {
+                cir = ori_cir;
+                cir.insert_fault(faults[slot[i][j]].mode, faults[slot[i][j]].net);
+                vector<bool> nowBits = simulate(cir, input);
+                if( nowBits != leaderBits )
+                    byebye.emplace_back(slot[i][j]);
+                else
+                    slot[i][top++] = slot[i][j];
+            }
+            if( byebye.size() ) {
+                slot[i].resize(slot[i].size() - byebye.size());
+                slot.emplace_back(move(byebye));
+            }
+        }
+    }
+
+    // Set different slot different
+    for(int i=1; i<slot.size(); ++i)
+        for(auto &id1 : slot[i])
+            for(int j=0; j<i; ++j)
+                for(auto &id2 : slot[j])
+                    faults.setDiff(id1, id2);
+}
+
+
 int main(int argv, char **argc) {
     
     srand(time(NULL));
@@ -57,24 +138,11 @@ int main(int argv, char **argc) {
     ori_cir.dfs();
 
 
-    // Find all trush fault(same as ori_cir)
-    vector<int> trash;
-    for(int i=0; i<faults.size(); ++i) {
-        Circuit cir_1 = ori_cir;
-        Circuit cir_2 = ori_cir;
-        cir_2.insert_fault(faults[i].mode, faults[i].net);
+    vector<bool> trash(faults.size(), false);
 
-        if( beq(cir_1, cir_2) )
-            trash.emplace_back(i);
-    }
-    if( trash.size() ) {
-        for(int i=1; i<trash.size(); ++i)
-            faults.setSame(trash[0], trash[i]);
-        for(int i=0; i<faults.size(); ++i)
-            if( !faults.same(trash[0], i) )
-                faults.setDiff(trash[0], i);
-    }
+    procTrashFault(ori_cir, faults, trash);
 
+    procRandomSimulationTest(ori_cir, faults, trash);
 
     // Greedy partition falut into multiple slot
     vector< vector<int> > slot;
@@ -107,11 +175,10 @@ int main(int argv, char **argc) {
             slot[sid].push_back(i);
 
     }
-
-
-    // Compare faluts inside one slot
+    
     for(const auto &vec : slot)
         compare_all(ori_cir, faults, vec);
+    
 
 
     // Compare all group

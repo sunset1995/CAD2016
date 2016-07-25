@@ -11,6 +11,7 @@ Circuit equvalence checking
 #include <vector>
 #include "sources/circuit.h"
 #include "sources/SAT_solver.h"
+#include "sources/simulator.h"
 
 using namespace std;
 
