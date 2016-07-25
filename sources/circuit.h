@@ -35,8 +35,9 @@ using namespace std;
 struct node
 {
     int mode;
-    int in1;
-    int in2;
+    int in1;//if it's dff, in1 is rst
+    int in2;//if it's dff, in2 is enable
+    int din;//if it's dff, din is D
     int out;
     bool neg;
     bool sa0;
@@ -54,14 +55,16 @@ class Circuit
 public:
     vector<node> circuit; // store all nodes
     vector<int> output; // which nodes are output?
+    vector<int> dff; //which nodes are dffs?
     unordered_map<int, int> mp;
     int cnt;
     int input_cnt;
     int gate_cnt;
     int fault_id;
+    bool seq;//if it's a sequential circuit
     Circuit();
     void init();
-    void insert_gate(int mode, int in1, int in2, int out);
+    void insert_gate(int mode, int in1, int in2, int din, int out);
     void insert_output(int out);
     void dfs();
     int gate_trans(int gate);
