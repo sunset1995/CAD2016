@@ -178,18 +178,6 @@ int main(int argv, char **argc) {
     
     for(const auto &vec : slot)
         compare_all(ori_cir, faults, vec);
-    
-
-
-    // Compare all group
-    /*
-    vector<int> universe_slot;
-    universe_slot.reserve(faults.size());
-    for(const auto &vec : slot)
-        for(int i=0; i<vec.size(); ++i)
-            universe_slot.emplace_back(vec[i]);
-    compare_all(ori_cir, faults, universe_slot);
-    */
 
 
     // Print result
