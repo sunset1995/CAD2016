@@ -1,15 +1,22 @@
 #include "sources/simulator.h"
 
 
-vector<bool> simulate(const Circuit &cir, const vector<bool> &input) {
+vector<bool> simulate(const Circuit &cir, const vector<bool> &input, const vector<bool> &dff) {
     
     int cnt = cir.circuit.size();
-    vector<unsigned char> nds(cnt, 2);
 
-    // Set input
-    for(int i=0, j=0; i<cnt; ++i)
+    // 0 for low
+    // 1 for high
+    // 2 for undeterminate
+    vector<unsigned char> nds(cnt, 3);
+
+    // Preset
+    for(int i=0,j=-1; i<cir.circuit.size(); ++i)
         if( cir.circuit[i].mode == 0 )
-            nds[i] = input[j++];
+            nds[i] = input[++j];
+    for(int i=0,j=-1; i<cir.circuit.size(); ++i)
+        if( cir.circuit[i].mode == 10 )
+            nds[i] = input[++j];
 
     // Coculate output
     vector<bool> output(cir.output.size());
@@ -21,8 +28,15 @@ vector<bool> simulate(const Circuit &cir, const vector<bool> &input) {
 
 
 bool getSignal(const Circuit &cir, vector<unsigned char> &dp, int nowAt) {
+    if( nowAt==-1 ) return rand()%2;
     if( dp[nowAt]==0 ) return false;
     if( dp[nowAt]==1 ) return true;
+
+    // Cycle detected
+    if( dp[nowAt]==2 )
+        return dp[nowAt] = rand()%2;
+    dp[nowAt] = 2;
+
 
     if( cir.circuit[nowAt].sa0 ) {
         dp[nowAt] = 0;

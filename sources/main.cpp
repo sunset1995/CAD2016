@@ -78,10 +78,14 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, const vecto
             slot[0].emplace_back(i);
 
     // Run simulation test
+    vector<bool> input(ori_cir.input_cnt, 0);
+    vector<bool> dff(ori_cir.dff.size(), 0);
+
     for(int __cnt=0; __cnt<20; ++__cnt) {
-        vector<bool> input(ori_cir.input_cnt);
+        
         for(int i=0; i<input.size(); ++i)
-            input[i] = (rand()&1);
+            input[i] = rand()&1;
+
         int to = slot.size();
         for(int i=0; i<to; ++i) {
 
@@ -92,14 +96,14 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, const vecto
             Circuit cir = ori_cir;
             cir.insert_fault(faults[slot[i][0]].mode, faults[slot[i][0]].net);
 
-            vector<bool> leaderBits = simulate(cir, input);
+            vector<bool> leaderBits = simulate(cir, input, dff);
             
             // all fault different from leader must exit
             vector<int> byebye;
             for(int j=1,top=1; j<slot[i].size(); ++j) {
                 cir = ori_cir;
                 cir.insert_fault(faults[slot[i][j]].mode, faults[slot[i][j]].net);
-                vector<bool> nowBits = simulate(cir, input);
+                vector<bool> nowBits = simulate(cir, input, dff);
                 if( nowBits != leaderBits )
                     byebye.emplace_back(slot[i][j]);
                 else
@@ -184,6 +188,7 @@ int main(int argv, char **argc) {
     vector< pair<int,int> > ans = faults.result();
     for(int i=0; i<ans.size(); ++i)
         printf("%d %d\n", ans[i].first, ans[i].second);
+    fflush(stdout);
 
     return 0;
 }
