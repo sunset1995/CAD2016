@@ -87,6 +87,7 @@ void Circuit::insert_fault(int mode, int id)
                 node n;
                 n.in1=id;
                 n.in2=-1;
+                n.din=-1;
                 n.out=cnt+1;
                 fault_id=cnt+1;
                 n.mode=8;
@@ -165,6 +166,7 @@ void Circuit::add_xor_gates(vector<int> out)
         n.in1=out[i];
         n.in2=out[i+out.size()/2];
         n.out=cnt+1;
+        n.din=-1;
         cnt++;
         gate_cnt++;
         n.mode=6;
