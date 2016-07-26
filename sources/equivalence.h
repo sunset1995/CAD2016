@@ -17,6 +17,10 @@ using namespace std;
 
 vector< vector<int> > convert(node n); //convert a gate expression to a cnf expression
 
+bool SAT_accepter(vector< vector<int> > cnf, vector<int> pat);
+
+bool existed(vector< vector<int> > st, vector<int> state);
+
 bool SEQ_SAT(Circuit CCT, vector< vector<int> > CNF, int N);
 
 Circuit join(const Circuit &a, const Circuit &b);
