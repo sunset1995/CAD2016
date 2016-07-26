@@ -1,5 +1,6 @@
 #include <cstdio>
 #include <vector>
+#include <unordered_set>
 #include <ctime>
 #include <cstdlib>
 #include <algorithm>
@@ -51,7 +52,7 @@ void procTrashFault(const Circuit &ori_cir, Fault &faults, vector<bool> &trash) 
         Circuit cir = ori_cir;
         cir.insert_fault(faults[i].mode, faults[i].net);
 
-        if( beq(ori_cir, cir) ) {
+        if( beq(cir, ori_cir) ) {
             trash[i] = true;
             if( trashLeader==-1 )
                 trashLeader = i;

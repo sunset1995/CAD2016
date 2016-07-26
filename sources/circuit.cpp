@@ -12,6 +12,7 @@ void Circuit::init()
     circuit.push_back(n);
     mp.clear();
     dff.clear();
+    fault_id=0;
     input_cnt=0;
     gate_cnt=0;
     cnt=0;

@@ -29,6 +29,8 @@ bool Fault::diff(int a, int b) {
 void Fault::setSame(int a, int b) {
     a = group(a);
     b = group(b);
+    if( a==b )
+        return;
     faults[b].group = a;
     faults[a].minfid = min(faults[a].minfid, faults[b].minfid);
     for(auto id : faults[b].diff)
