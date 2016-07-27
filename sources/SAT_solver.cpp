@@ -1,6 +1,6 @@
 #include "sources/SAT_solver.h"
 
-vector<bool> SAT_solver(vector< vector<int> > clauses, int n) {
+vector<int> SAT_solver(vector< vector<int> > clauses, int n) {
 
 
     Solver S;
@@ -26,18 +26,14 @@ vector<bool> SAT_solver(vector< vector<int> > clauses, int n) {
     }
 
 
-    vector<bool> result;
+    vector<int> result;
 
     // Try to solve via simplify
     if (!S.simplify())
         return result;
 
-    // Solve
-    vec<Lit> dummy;
-    lbool ret = S.solveLimited(dummy);
-
     // Result
-    if( ret==l_True ) {
+    if( S.solve() ) {
         result.resize(n+1);
         for (int i=0; i<=n; i++)
             result[i] = (S.model[i] == l_True);

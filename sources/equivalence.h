@@ -21,7 +21,7 @@ bool SAT_accepter(const vector< vector<int> > &cnf, const vector<int> &pat);
 
 bool existed(const vector< vector<int> > &st, const vector<int> &state);
 
-bool SEQ_SAT(Circuit CCT, vector< vector<int> > CNF, int N);
+bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N);
 
 Circuit join(const Circuit &a, const Circuit &b);
 

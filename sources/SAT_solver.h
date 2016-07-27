@@ -22,6 +22,6 @@ using namespace Minisat;
     Each clause store in vector<int>.
     All variable id from 1~N, negative means invert.
 */
-vector<bool> SAT_solver(vector< vector<int> >, int);
+vector<int> SAT_solver(vector< vector<int> >, int);
 
 #endif
