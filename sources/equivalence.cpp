@@ -127,7 +127,7 @@ bool existed(const vector< vector<int> > &st, const vector<int> &state)
     return 0;
 }
 
-bool SEQ_SAT(Circuit CCT, vector< vector<int> > CNF, int N)
+bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
 {
     vector<int> state;
     vector< vector<int> > st;
@@ -136,7 +136,7 @@ bool SEQ_SAT(Circuit CCT, vector< vector<int> > CNF, int N)
     vector<int> din;//all ppo index
     vector<int> tmp;
     vector<int> sat;
-    int cnt;
+    int cnt;how many variable were pushed in cnf to indicated necessary PPO, remember it and pop them after use
     qout=CCT.dff;
     for(int i=0;i<qout.size();i++){
         int index=qout[i];
