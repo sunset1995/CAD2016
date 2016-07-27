@@ -136,7 +136,7 @@ bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
     vector<int> din;//all ppo index
     vector<int> tmp;
     vector<int> sat;
-    int cnt;how many variable were pushed in cnf to indicated necessary PPO, remember it and pop them after use
+    int cnt;//how many variable were pushed in cnf to indicated necessary PPO, remember it and pop them after use
     qout=CCT.dff;
     for(int i=0;i<qout.size();i++){
         int index=qout[i];
