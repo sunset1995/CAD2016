@@ -100,7 +100,7 @@ vector< vector<int> > convert(node n) //convert a gate expression to a cnf expre
     return ret;
 }
 
-bool SAT_accepter(vector< vector<int> > cnf, vector<int> pat)
+bool SAT_accepter(const vector< vector<int> > &cnf, const vector<bool> &pat)
 {
     int i, j;
     for(i=0;i<cnf.size();i++){
@@ -113,7 +113,7 @@ bool SAT_accepter(vector< vector<int> > cnf, vector<int> pat)
     return 1;
 }
 
-bool existed(vector< vector<int> > st, vector<int> state)
+bool existed(const vector< vector<int> > &st, const vector<int> &state)
 {
     int i, j;
     for(i=0;i<st.size();i++){
@@ -129,8 +129,8 @@ bool existed(vector< vector<int> > st, vector<int> state)
 
 bool SEQ_SAT(Circuit CCT, vector< vector<int> > CNF, int N)
 {
-    vector<bool> state;
-    unordered_set< vector<bool> > st;
+    vector<int> state;
+    vector< vector<int> > st;
     vector< vector<int> > cnf=CNF;
     vector<int> qout;//all ppi index
     vector<int> din;//all ppo index
