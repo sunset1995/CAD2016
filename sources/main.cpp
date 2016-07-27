@@ -135,6 +135,8 @@ int main(int argv, char **argc) {
         return 1;
     }
 
+    freopen("identical_fault_pairs.txt", "w", stdout);
+
     ISC_parser testdata;
 
     Circuit ori_cir = testdata.parse_isc_file(argc[1]);
