@@ -127,7 +127,7 @@ bool existed(const vector< vector<int> > &st, const vector<int> &state)
     return 0;
 }
 
-bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
+bool SEQ_SAT(Circuit CCT, vector< vector<int> > CNF, int N)
 {
     vector<int> state;
     vector< vector<int> > st;
@@ -136,7 +136,7 @@ bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
     vector<int> din;//all ppo index
     vector<int> tmp;
     vector<int> sat;
-    int cnt;//how many fixed state clauses are pushed in cnf, remember it and pop them after use
+    int cnt;
     qout=CCT.dff;
     for(int i=0;i<qout.size();i++){
         int index=qout[i];
@@ -145,11 +145,13 @@ bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
     //test if the reset state will sat
     for(int i=0;i<qout.size();i++){
         tmp.clear();
-        tmp.push_back(-qout[i]);
+        if(CCT.circuit[qout[i]].sa1 || CCT.circuit[qout[i]].neg) tmp.push_back(qout[i]);
+        else tmp.push_back(-qout[i]);
         cnf.push_back(tmp);
     }
-    if(SAT_solver(cnf, N).size()>0) return 1;
-    //tuei r chiu chi tz
+    sat=SAT_solver(cnf, N);
+    if(sat.size()>0) return 1;
+    //pop the reset clause
     for(int i=0;i<qout.size();i++) cnf.pop_back();
     sat=SAT_solver(cnf, N);
     if(sat.size()==0) return 0;
@@ -161,7 +163,7 @@ bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
         if(!SAT_accepter(cnf, sat)) sat[id]=ori;//if can't accept, recover it
         state.push_back(sat[id]);
     }
-    //po don't necessary 1
+    //po don't need to be 1
     cnf.pop_back();
     //trace back
     while(!existed(st, state)){
@@ -170,6 +172,9 @@ bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
         //necessary states
         for(int i=0;i<din.size();i++){
             tmp.clear();
+            if(CCT.circuit[qout[i]].sa0||CCT.circuit[qout[i]].sa1){
+                continue;//it's din won't affect
+            }
             if(state[i]==1) tmp.push_back(din[i]);
             else if(state[i]==0) tmp.push_back(-din[i]);
             if(tmp.size()){
@@ -177,10 +182,21 @@ bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
                 cnt++;
             }
         }
+        //previous states can't repeat
+        tmp.clear();
+        for(int i=0;i<din.size();i++){
+            if(state[i]==1) tmp.push_back(-qout[i]);
+            else if(state[i]==0) tmp.push_back(qout[i]);
+        }
+        if(tmp.size()){
+            cnf.push_back(tmp);
+            cnt++;
+        }
         //test if the reset state will sat
         for(int i=0;i<qout.size();i++){
             tmp.clear();
-            tmp.push_back(-qout[i]);
+            if(CCT.circuit[qout[i]].sa1 || CCT.circuit[qout[i]].neg) tmp.push_back(qout[i]);
+            else tmp.push_back(-qout[i]);
             cnf.push_back(tmp);
         }
         if(SAT_solver(cnf, N).size()>0) return 1;
