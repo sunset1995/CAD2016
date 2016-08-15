@@ -113,24 +113,9 @@ bool SAT_accepter(const vector< vector<int> > &cnf, const vector<int> &pat)
     return 1;
 }
 
-bool existed(const vector< vector<int> > &st, const vector<int> &state)
-{
-    int i, j;
-    for(i=0;i<st.size();i++){
-        for(j=0;j<st[i].size();j++){
-            if(state[j]==2 && st[i][j]!=2) break;
-            else if(state[j]==0 && st[i][j]==1) break;
-            else if(state[j]==1 && st[i][j]==0) break;
-        }
-        if(j==st[i].size()) return 1;
-    }
-    return 0;
-}
-
 bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
 {
     vector<int> state;
-    vector< vector<int> > st;
     vector< vector<int> > cnf=CNF;
     vector<int> qout;//all ppi index
     vector<int> din;//all ppo index
@@ -166,10 +151,18 @@ bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
     //po don't need to be 1
     cnf.pop_back();
     //trace back
-    while(!existed(st, state)){
-        st.push_back(state);
+    while(1){
+        //previous states can't repeat
+        tmp.clear();
+        for(int i=0;i<din.size();i++){
+            if(state[i]==1) tmp.push_back(-qout[i]);
+            else if(state[i]==0) tmp.push_back(qout[i]);
+        }
+        if(tmp.size()){
+            cnf.push_back(tmp);
+        }
+        //necessary states (PPI)
         cnt=0;
-        //necessary states
         for(int i=0;i<din.size();i++){
             tmp.clear();
             if(CCT.circuit[qout[i]].sa0||CCT.circuit[qout[i]].sa1){
@@ -181,16 +174,6 @@ bool SEQ_SAT(Circuit CCT, const vector< vector<int> > &CNF, int N)
                 cnf.push_back(tmp);
                 cnt++;
             }
-        }
-        //previous states can't repeat
-        tmp.clear();
-        for(int i=0;i<din.size();i++){
-            if(state[i]==1) tmp.push_back(-qout[i]);
-            else if(state[i]==0) tmp.push_back(qout[i]);
-        }
-        if(tmp.size()){
-            cnf.push_back(tmp);
-            cnt++;
         }
         //test if the reset state will sat
         for(int i=0;i<qout.size();i++){
