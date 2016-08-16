@@ -73,13 +73,19 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults) {
     vector<bool> input(ori_cir.input_cnt, 0);
     vector<bool> dff(ori_cir.dff.size(), 0);
 
-    for(int __cnt=0; __cnt<20; ++__cnt) {
+    // Run at most 20 rounds
+    for(int __round=0; __round<20; ++__round) {
         
         for(int i=0; i<input.size(); ++i)
             input[i] = rand()&1;
 
+        // Store slot leader output
+        vector< vector<bool> > output(slots.size());
+
+        // If split new slot or not
         bool good = false;
 
+        // No need to check new generated slot in same round
         int to = slots.size();
         for(int i=0; i<to; ++i) {
 
@@ -87,22 +93,32 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults) {
                 continue;
 
             // pick slot[i][0] as leader
-            vector<bool> leaderBits = simulate(cir[slots[i][0]], input, dff);
+            output[i] = simulate(cir[slots[i][0]], input, dff);
             
             // all fault different from leader must exit
-            vector<int> byebye;
-            for(int j=1,top=1; j<slots[i].size(); ++j) {
+            int start = slots.size();
+            int sz = 1;
+            for(int j=1; j<slots[i].size(); ++j) {
                 vector<bool> nowBits = simulate(cir[slots[i][j]], input, dff);
-                if( nowBits != leaderBits )
-                    byebye.emplace_back(slots[i][j]);
-                else
-                    slots[i][top++] = slots[i][j];
-            }
-            if( byebye.size() ) {
-                slots[i].resize(slots[i].size() - byebye.size());
-                slots.emplace_back(move(byebye));
+                if( nowBits == output[i] ) {
+                    slots[i][sz++] = slots[i][j];
+                    continue;
+                }
                 good = true;
+
+                bool findNewMaster = false;
+                for(int k=start; k<slots.size(); ++k)
+                    if( nowBits == output[k] ) {
+                        slots[k].emplace_back(slots[i][j]);
+                        findNewMaster = true;
+                        break;
+                    }
+                if( !findNewMaster ) {
+                    slots.push_back({slots[i][j]});
+                    output.emplace_back(move(nowBits));
+                }
             }
+            slots[i].resize(sz);
         }
         if( !good )
             break;
