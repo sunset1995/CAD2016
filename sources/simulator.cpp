@@ -16,7 +16,7 @@ vector<bool> simulate(const Circuit &cir, const vector<bool> &input, const vecto
             nds[i] = input[++j];
     for(int i=0,j=-1; i<cir.circuit.size(); ++i)
         if( cir.circuit[i].mode == 10 )
-            nds[i] = input[++j];
+            nds[i] = dff[++j];
 
     // Coculate output
     vector<bool> output(cir.output.size());
