@@ -27,99 +27,57 @@ vector<bool> simulate(const Circuit &cir, const vector<bool> &input, const vecto
 }
 
 
-struct SimRecurStack {
-    const int nowAt;
-    int state;
-    SimRecurStack(int nowAt, int state)
-    :nowAt(nowAt), state(state) {}
-};
-bool getSignal(const Circuit &cir, vector<unsigned char> &dp, const int initAt) {
-    vector<SimRecurStack> stk;
-    stk.reserve(32);
-    stk.emplace_back(SimRecurStack(initAt, -1));
+bool getSignal(const Circuit &cir, vector<unsigned char> &dp, int nowAt) {
+    if( nowAt==-1 ) return rand()%2;
+    if( dp[nowAt]==0 ) return false;
+    if( dp[nowAt]==1 ) return true;
 
-    while( stk.size() ) {
-        const int nowAt = stk.back().nowAt;
-
-        if( stk.back().state==-1 ) {
-            if( dp[nowAt]==0 || dp[nowAt]==1 ) {
-                stk.pop_back();
-                continue;
-            }
-
-            // Detect cycle
-            if( dp[nowAt]==2 ) {
-                dp[nowAt] = rand()&1;
-                stk.pop_back();
-                continue;
-            }
-            dp[nowAt] = 2;
+    // Cycle detected
+    if( dp[nowAt]==2 )
+        return dp[nowAt] = rand()%2;
+    dp[nowAt] = 2;
 
 
-            if( cir.circuit[nowAt].sa0 ) {
-                dp[nowAt] = 0;
-                stk.pop_back();
-                continue;
-            }
-
-            if( cir.circuit[nowAt].sa1 ) {
-                dp[nowAt] = 1;
-                stk.pop_back();
-                continue;
-            }
-
-            stk.back().state = 0;
-        }
-
-        int mode = cir.circuit[nowAt].mode;
-        int in1 = cir.circuit[nowAt].in1;
-        int in2 = cir.circuit[nowAt].in2;
-        bool neg = cir.circuit[nowAt].neg;
-
-        if( stk.back().state == 0 ) {
-
-            // buff/not
-            if( in2 == -1 )
-                stk.back().state = 100;
-            else
-                stk.back().state = 1;
-
-            stk.emplace_back(SimRecurStack(in1, -1));
-            continue;
-        }
-        else if( stk.back().state == 100 ) {
-            dp[nowAt] = dp[in1];
-            dp[nowAt] ^= (mode==9);
-            dp[nowAt] ^= neg;
-            stk.pop_back();
-            continue;
-        }
-        else if( stk.back().state == 1 ) {
-            stk.back().state = 2;
-            stk.emplace_back(SimRecurStack(in2, -1));
-            continue;
-        }
-        else if( stk.back().state == 2 ) {
-            bool res_1 = dp[in1];
-            bool res_2 = dp[in2];
-
-            if( mode==2 )
-                dp[nowAt] = res_1 & res_2;
-            else if( mode==3 )
-                dp[nowAt] = !(res_1 & res_2);
-            else if( mode==4 )
-                dp[nowAt] = res_1 | res_2;
-            else if( mode==5 )
-                dp[nowAt] = !(res_1 | res_2);
-            else if( mode==6 )
-                dp[nowAt] = res_1 ^ res_2;
-            else if( mode==7 )
-                dp[nowAt] = !(res_1 ^ res_2);
-
-            dp[nowAt] ^= neg;
-            stk.pop_back();
-        }
+    if( cir.circuit[nowAt].sa0 ) {
+        dp[nowAt] = 0;
+        return false;
     }
 
-    return dp[initAt]==1;
+    if( cir.circuit[nowAt].sa1 ) {
+        dp[nowAt] = 1;
+        return true;
+    }
+
+    int mode = cir.circuit[nowAt].mode;
+    int in1 = cir.circuit[nowAt].in1;
+    int in2 = cir.circuit[nowAt].in2;
+    bool neg = cir.circuit[nowAt].neg;
+
+    // buff/not
+    if( in2 == -1 ) {
+        dp[nowAt] = getSignal(cir, dp, in1);
+        dp[nowAt] ^= (mode==9);
+        dp[nowAt] ^= neg;
+        return dp[nowAt];
+    }
+
+    bool res_1 = getSignal(cir, dp, in1);
+    bool res_2 = getSignal(cir, dp, in2);
+
+    if( mode==2 )
+        dp[nowAt] = res_1 & res_2;
+    else if( mode==3 )
+        dp[nowAt] = !(res_1 & res_2);
+    else if( mode==4 )
+        dp[nowAt] = res_1 | res_2;
+    else if( mode==5 )
+        dp[nowAt] = !(res_1 | res_2);
+    else if( mode==6 )
+        dp[nowAt] = res_1 ^ res_2;
+    else if( mode==7 )
+        dp[nowAt] = !(res_1 ^ res_2);
+
+    dp[nowAt] ^= neg;
+
+    return dp[nowAt];
 }
