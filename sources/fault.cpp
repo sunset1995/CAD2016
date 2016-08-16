@@ -7,6 +7,7 @@ void Fault::addFault(int _id, int _net, const char *_mode) {
     now.mode = faultName2faultMode(_mode);
     now.group = faults.size();
     now.minfid = _id;
+    now.trash = false;
     faults.emplace_back(now);
 }
 

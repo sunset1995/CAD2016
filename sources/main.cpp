@@ -38,13 +38,12 @@ void compare_all(const Circuit &ori_cir, Fault &faults, const vector<int> &slot)
 void procTrashFault(const Circuit &ori_cir, Fault &faults) {
     // Find all trush fault(same as ori_cir)
     int trashLeader = -1;
-    vector<bool> trash(faults.size(), false);
     for(int i=0; i<faults.size(); ++i) {
         if( trashLeader!=-1 && faults.diff(i, trashLeader) )
             continue;
 
         if( beq(cir[i], ori_cir) ) {
-            trash[i] = true;
+            faults[i].trash = true;
             if( trashLeader==-1 )
                 trashLeader = i;
         }
@@ -52,7 +51,7 @@ void procTrashFault(const Circuit &ori_cir, Fault &faults) {
 
     if( trashLeader!=-1 ) {
         for(int i=0; i<faults.size(); ++i) {
-            if( trash[i] )
+            if( faults[i].trash )
                 faults.setSame(trashLeader, i);
             else
                 faults.setDiff(trashLeader, i);
@@ -148,30 +147,33 @@ int main(int argv, char **argc) {
 
 
     // Greedy partition falut into multiple slot
-    slots.clear();
     const vector<node> &cir = ori_cir.circuit;
 
-    for(int i=0; i<faults.size(); ++i) {
+    for(int i=0; i<slots.size(); ++i) {
+        if( slots[i].size()<2 )
+            continue;
 
-        int id1 = ori_cir.gate_trans(faults[i].net);
-        int sid = -1;
+        int id1 = ori_cir.gate_trans(faults[slots[i][0]].net);
 
-        for(int j=0; j<slots.size() && sid==-1; ++j) {
-            
-            int id2 = ori_cir.gate_trans(faults[slots[j][0]].net);
-
-            if( cir[id1].fanout == cir[id2].fanout ) {
-                sid = j;
-                break;
-            }
+        // all fault different from leader must exit
+        vector<int> byebye;
+        int top=1;
+        for(int j=1; j<slots[i].size(); ++j) {
+            if( faults[slots[i][j]].trash )
+                continue;
+            int id2 = ori_cir.gate_trans(faults[slots[i][j]].net);
+            if( cir[id1].fanout != cir[id2].fanout )
+                byebye.emplace_back(slots[i][j]);
+            else
+                slots[i][top++] = slots[i][j];
         }
 
-        if( sid==-1 )
-            slots.push_back({i});
-        else
-            slots[sid].push_back(i);
-
+        if( byebye.size() ) {
+            slots[i].resize(top);
+            slots.emplace_back(move(byebye));
+        }
     }
+
     
     for(const auto &vec : slots)
         compare_all(ori_cir, faults, vec);

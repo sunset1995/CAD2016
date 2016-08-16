@@ -17,6 +17,7 @@ public:
     struct fault {
         int fid, net, mode, group, minfid;
         unordered_set<int> diff;
+        bool trash;
     };
     vector<fault> faults;
 
