@@ -14,6 +14,7 @@
 using namespace Minisat;
 
 vector<Circuit> cir;
+vector< vector<int> > slots;
 
 void compare_all(const Circuit &ori_cir, Fault &faults, const vector<int> &slot) {
 
@@ -33,17 +34,22 @@ void compare_all(const Circuit &ori_cir, Fault &faults, const vector<int> &slot)
 
 }
 
-int checkSum = 0;
-void procTrashFault(const Circuit &ori_cir, Fault &faults, vector<bool> &trash) {
+
+void procTrashFault(const Circuit &ori_cir, Fault &faults) {
     // Find all trush fault(same as ori_cir)
     int trashLeader = -1;
+    vector<bool> trash(faults.size(), false);
     for(int i=0; i<faults.size(); ++i) {
+        if( trashLeader!=-1 && faults.diff(i, trashLeader) )
+            continue;
+
         if( beq(cir[i], ori_cir) ) {
             trash[i] = true;
             if( trashLeader==-1 )
                 trashLeader = i;
         }
     }
+
     if( trashLeader!=-1 ) {
         for(int i=0; i<faults.size(); ++i) {
             if( trash[i] )
@@ -55,14 +61,14 @@ void procTrashFault(const Circuit &ori_cir, Fault &faults, vector<bool> &trash) 
 }
 
 
-void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, const vector<bool> &trash) {
+void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults) {
     
-    vector< vector<int> > slot(1);
+    slots.clear();
+    slots.resize(1);
     
     // Init
     for(int i=0; i<faults.size(); ++i)
-        if( !trash[i] )
-            slot[0].push_back(i);
+        slots[0].push_back(i);
 
     // Run simulation test
     vector<bool> input(ori_cir.input_cnt, 0);
@@ -73,43 +79,41 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, const vecto
         for(int i=0; i<input.size(); ++i)
             input[i] = rand()&1;
 
-        int to = slot.size();
+        bool good = false;
+
+        int to = slots.size();
         for(int i=0; i<to; ++i) {
 
-            if( slot[i].size()<2 )
+            if( slots[i].size()<2 )
                 continue;
 
             // pick slot[i][0] as leader
-            vector<bool> leaderBits = simulate(cir[slot[i][0]], input, dff);
+            vector<bool> leaderBits = simulate(cir[slots[i][0]], input, dff);
             
             // all fault different from leader must exit
             vector<int> byebye;
-            for(int j=1,top=1; j<slot[i].size(); ++j) {
-                vector<bool> nowBits = simulate(cir[slot[i][j]], input, dff);
+            for(int j=1,top=1; j<slots[i].size(); ++j) {
+                vector<bool> nowBits = simulate(cir[slots[i][j]], input, dff);
                 if( nowBits != leaderBits )
-                    byebye.emplace_back(slot[i][j]);
+                    byebye.emplace_back(slots[i][j]);
                 else
-                    slot[i][top++] = slot[i][j];
+                    slots[i][top++] = slots[i][j];
             }
             if( byebye.size() ) {
-                slot[i].resize(slot[i].size() - byebye.size());
-                slot.emplace_back(move(byebye));
+                slots[i].resize(slots[i].size() - byebye.size());
+                slots.emplace_back(move(byebye));
+                good = true;
             }
         }
+        if( !good )
+            break;
     }
-
-    printf("%d\n", (int)faults.size());
-    for(int i=0; i<slot.size(); ++i) {
-        checkSum += slot[i].size();
-        printf("%d ", slot[i].size());
-    }
-    puts("");
 
     // Set different slot different
-    for(int i=1; i<slot.size(); ++i)
-        for(auto &id1 : slot[i])
+    for(int i=1; i<slots.size(); ++i)
+        for(auto &id1 : slots[i])
             for(int j=0; j<i; ++j)
-                for(auto &id2 : slot[j])
+                for(auto &id2 : slots[j])
                     faults.setDiff(id1, id2);
 }
 
@@ -137,23 +141,14 @@ int main(int argv, char **argc) {
     cir.resize(faults.size(), ori_cir);
     for(int i=0; i<faults.size(); ++i)
         cir[i].insert_fault(faults[i].mode, faults[i].net);
-    
-
-    vector<bool> trash(faults.size(), false);
-    procTrashFault(ori_cir, faults, trash);
 
 
-    procRandomSimulationTest(ori_cir, faults, trash);
-    int trashcnt = 0;
-    for(int i=0; i<trash.size(); ++i)
-        trashcnt += trash[i],
-        checkSum += trash[i];
-    printf("%d\n", trashcnt);
-    printf("%d vs. %d\n", faults.size(), checkSum);
+    procRandomSimulationTest(ori_cir, faults);
+    procTrashFault(ori_cir, faults);
 
 
     // Greedy partition falut into multiple slot
-    vector< vector<int> > slot;
+    slots.clear();
     const vector<node> &cir = ori_cir.circuit;
 
     for(int i=0; i<faults.size(); ++i) {
@@ -161,30 +156,24 @@ int main(int argv, char **argc) {
         int id1 = ori_cir.gate_trans(faults[i].net);
         int sid = -1;
 
-        for(int j=0; j<slot.size() && sid==-1; ++j) {
+        for(int j=0; j<slots.size() && sid==-1; ++j) {
             
-            int id2 = ori_cir.gate_trans(faults[slot[j][0]].net);
-            sid = j;
+            int id2 = ori_cir.gate_trans(faults[slots[j][0]].net);
 
-            if( cir[id1].fanout.size() != cir[id2].fanout.size() ) {
-                sid = -1;
-                continue;
+            if( cir[id1].fanout == cir[id2].fanout ) {
+                sid = j;
+                break;
             }
-            for(auto out : cir[id1].fanout)
-                if( cir[id2].fanout.find(out) == cir[id2].fanout.end() ) {
-                    sid = -1;
-                    break;
-                }
         }
 
         if( sid==-1 )
-            slot.push_back({i});
+            slots.push_back({i});
         else
-            slot[sid].push_back(i);
+            slots[sid].push_back(i);
 
     }
     
-    for(const auto &vec : slot)
+    for(const auto &vec : slots)
         compare_all(ori_cir, faults, vec);
 
 
