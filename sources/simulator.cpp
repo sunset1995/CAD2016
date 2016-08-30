@@ -1,7 +1,7 @@
 #include "sources/simulator.h"
 
 
-vector<bool> simulate(const Circuit &cir, const vector<bool> &input, const vector<bool> &dff) {
+pair< vector<bool>, vector<bool> > simulate(const Circuit &cir, const vector<bool> &input, const vector<bool> &dff) {
     
     int cnt = cir.circuit.size();
 
@@ -20,10 +20,14 @@ vector<bool> simulate(const Circuit &cir, const vector<bool> &input, const vecto
 
     // Coculate output
     vector<bool> output(cir.output.size());
+    vector<bool> dff_in(cir.dff_in.size());
+    
     for(int i=0; i<cir.output.size(); ++i)
         output[i] = getSignal(cir, nds, cir.output[i]);
+    for(int i=0; i<cir.dff_in.size(); ++i)
+        dff_in[i] = getSignal(cir, nds, cir.dff_in[i]);
 
-    return output;
+    return make_pair(output, dff_in);
 }
 
 

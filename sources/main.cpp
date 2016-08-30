@@ -59,8 +59,17 @@ void procTrashFault(const Circuit &ori_cir, Fault &faults) {
     }
 }
 
+void printVector(vector<bool> &vec)
+{
+    printf("VEC:: ");
+    for(int i=0;i<vec.size();i++){
+        printf("%d ", vec[i]?1:0);
+    }
+    puts("");
+}
 
-void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults) {
+
+void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, int sim_space_span = 20, int sim_time_span = 20) {
     
     slots.clear();
     slots.resize(1);
@@ -69,59 +78,71 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults) {
     for(int i=0; i<faults.size(); ++i)
         slots[0].push_back(i);
 
-    // Run simulation test
-    vector<bool> input(ori_cir.input_cnt, 0);
-    vector<bool> dff(ori_cir.dff.size(), 0);
-
     // Run at most 20 rounds
-    for(int __round=0; __round<20; ++__round) {
-        
-        for(int i=0; i<input.size(); ++i)
-            input[i] = rand()&1;
-
-        // Store slot leader output
-        vector< vector<bool> > output(slots.size());
-
+    for(int __round=0; __round<sim_space_span; ++__round) {
+        // Run simulation testdata
+        int __time_span_max = (ori_cir.seq ? sim_time_span : 1);
         // If split new slot or not
         bool good = false;
 
-        // No need to check new generated slot in same round
-        int to = slots.size();
-        for(int i=0; i<to; ++i) {
+        vector<bool> input(ori_cir.input_cnt, 0);
+        vector< vector<bool> > dff(cir.size(), vector<bool>(ori_cir.dff.size(), 0));
 
-            if( slots[i].size()<2 )
-                continue;
-
-            // pick slot[i][0] as leader
-            output[i] = simulate(cir[slots[i][0]], input, dff);
+        for(int __time_span=0; __time_span < __time_span_max; ++__time_span){
+            for(int i=0; i<input.size(); ++i)
+                input[i] = rand()&1;
             
-            // all fault different from leader must exit
-            int start = slots.size();
-            int sz = 1;
-            for(int j=1; j<slots[i].size(); ++j) {
-                vector<bool> nowBits = simulate(cir[slots[i][j]], input, dff);
-                if( nowBits == output[i] ) {
-                    slots[i][sz++] = slots[i][j];
-                    continue;
-                }
-                good = true;
+            // Store slot leader output
+            pair< vector<bool>, vector<bool> > tmp;
+            vector< vector<bool> > output(slots.size());
+            vector< vector<bool> > dff_next(cir.size(), vector<bool>(ori_cir.dff.size(), 0));
+            
+                    
+            // No need to check new generated slot in same round
+            int to = slots.size();
+            for(int i=0; i<to; ++i) {
 
-                bool findNewMaster = false;
-                for(int k=start; k<slots.size(); ++k)
-                    if( nowBits == output[k] ) {
-                        slots[k].emplace_back(slots[i][j]);
-                        findNewMaster = true;
-                        break;
+                if( slots[i].size()<2 )
+                    continue;
+
+                // pick slot[i][0] as leader
+                tmp = simulate(cir[slots[i][0]], input, dff[slots[i][0]]);
+                output[i] = tmp.first;
+                dff_next[slots[i][0]] = tmp.second;
+                
+                // all fault different from leader must exit
+                int start = slots.size();
+                int sz = 1;
+                for(int j=1; j<slots[i].size(); ++j) {
+                    tmp  = simulate(cir[slots[i][j]], input, dff[slots[i][j]]);
+
+                    vector<bool> nowBits = tmp.first;
+                    dff_next[slots[i][j]] = tmp.second;
+
+                    if( nowBits == output[i] ) {
+                        slots[i][sz++] = slots[i][j];
+                        continue;
                     }
-                if( !findNewMaster ) {
-                    slots.push_back({slots[i][j]});
-                    output.emplace_back(move(nowBits));
+                    good = true;
+
+                    bool findNewMaster = false;
+                    for(int k=start; k<slots.size(); ++k)
+                        if( nowBits == output[k] ) {
+                            slots[k].emplace_back(slots[i][j]);
+                            findNewMaster = true;
+                            break;
+                        }
+                    if( !findNewMaster ) {
+                        slots.push_back({slots[i][j]});
+                        output.emplace_back(move(nowBits));
+                    }
                 }
-            }
-            slots[i].resize(sz);
+                slots[i].resize(sz);
+            }            
+            dff = dff_next;
         }
-        if( !good )
-            break;
+        // if( !good )
+        //     break;
     }
 
     // Set different slot different
@@ -136,10 +157,16 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults) {
 int main(int argv, char **argc) {
     
     srand(time(NULL));
+    int sim_space_span = 20, sim_time_span = 20;
 
     if( argv<3 ) {
         puts("Not enough parameter");
         return 1;
+    }
+    if(argv == 5){
+        sim_space_span = atoi(argc[3]);
+        sim_time_span = atoi(argc[4]);
+        // printf("Read sim argument: SpaceSpan: %d,  TimeSpan: %d\n", sim_space_span, sim_time_span);
     }
 
     freopen("identical_fault_pairs.txt", "w", stdout);
@@ -151,14 +178,14 @@ int main(int argv, char **argc) {
 
 
     ori_cir.dfs();
-
+    // ori_cir.print_circuit();
 
     cir.resize(faults.size(), ori_cir);
     for(int i=0; i<faults.size(); ++i)
         cir[i].insert_fault(faults[i].mode, faults[i].net);
 
 
-    procRandomSimulationTest(ori_cir, faults);
+    procRandomSimulationTest(ori_cir, faults, sim_space_span, sim_time_span);
     procTrashFault(ori_cir, faults);
 
 

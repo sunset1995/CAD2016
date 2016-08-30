@@ -12,6 +12,7 @@ void Circuit::init()
     circuit.push_back(n);
     mp.clear();
     dff.clear();
+    dff_in.clear();
     fault_id=0;
     input_cnt=0;
     gate_cnt=0;
@@ -63,6 +64,7 @@ void Circuit::insert_gate(int mode, int in1, int in2, int din, int out)
     if(mode==10){
         seq=1;//it's a sequential circuit
         dff.push_back(out);
+        dff_in.push_back(din);
     }
 }
 
@@ -188,7 +190,7 @@ void Circuit::print_circuit()
         puts("");*/
     }
     for(int i=0;i<dff.size();i++){
-        printf("dff %d\n", dff[i]);
+        printf("dff %d, dffin %d\n", dff[i], dff_in[i]);
     }
     for(int i=0;i<output.size();i++){
         printf("output %d\n", output[i]);

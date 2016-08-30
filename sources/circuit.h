@@ -56,6 +56,7 @@ public:
     vector<node> circuit; // store all nodes
     vector<int> output; // which nodes are output?
     vector<int> dff; //which nodes are dffs?
+    vector<int> dff_in;
     unordered_map<int, int> mp;
     int cnt;
     int input_cnt;
