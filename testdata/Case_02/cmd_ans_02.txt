@@ -1,0 +1,943 @@
+UC Berkeley, ABC 1.01 (compiled Feb 13 2011 19:06:26)
+abc.rc: No such file or directory
+..\abc.rc: No such file or directory
+..\..\abc.rc: No such file or directory
+abc 01> cec fault97.bench fault257.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault98.bench fault258.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault99.bench fault227.bench
+Networks are equivalent.
+abc 01> cec fault99.bench fault228.bench
+Networks are equivalent.
+abc 01> cec fault99.bench fault235.bench
+Networks are equivalent.
+abc 01> cec fault99.bench fault240.bench
+Networks are equivalent.
+abc 01> cec fault99.bench fault243.bench
+Networks are equivalent.
+abc 01> cec fault99.bench fault248.bench
+Networks are equivalent.
+abc 01> cec fault99.bench fault251.bench
+Networks are equivalent.
+abc 01> cec fault99.bench fault256.bench
+Networks are equivalent.
+abc 01> cec fault99.bench fault259.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault99.bench fault264.bench
+Networks are equivalent.
+abc 01> cec fault100.bench fault290.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault100.bench fault297.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault101.bench fault298.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault102.bench fault299.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault102.bench fault302.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault103.bench fault330.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault104.bench fault329.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault105.bench fault307.bench
+Networks are equivalent.
+abc 01> cec fault105.bench fault312.bench
+Networks are equivalent.
+abc 01> cec fault105.bench fault315.bench
+Networks are equivalent.
+abc 01> cec fault105.bench fault320.bench
+Networks are equivalent.
+abc 01> cec fault105.bench fault323.bench
+Networks are equivalent.
+abc 01> cec fault105.bench fault328.bench
+Networks are equivalent.
+abc 01> cec fault105.bench fault331.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault105.bench fault336.bench
+Networks are equivalent.
+abc 01> cec fault106.bench fault338.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault106.bench fault346.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault106.bench fault354.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault106.bench fault362.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault107.bench fault361.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault108.bench fault363.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault108.bench fault366.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault109.bench fault401.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault110.bench fault402.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault111.bench fault371.bench
+Networks are equivalent.
+abc 01> cec fault111.bench fault376.bench
+Networks are equivalent.
+abc 01> cec fault111.bench fault379.bench
+Networks are equivalent.
+abc 01> cec fault111.bench fault384.bench
+Networks are equivalent.
+abc 01> cec fault111.bench fault387.bench
+Networks are equivalent.
+abc 01> cec fault111.bench fault392.bench
+Networks are equivalent.
+abc 01> cec fault111.bench fault395.bench
+Networks are equivalent.
+abc 01> cec fault111.bench fault400.bench
+Networks are equivalent.
+abc 01> cec fault111.bench fault403.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault111.bench fault408.bench
+Networks are equivalent.
+abc 01> cec fault112.bench fault473.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault113.bench fault466.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault113.bench fault474.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault114.bench fault475.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault114.bench fault478.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault115.bench fault514.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault116.bench fault506.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault116.bench fault513.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault117.bench fault515.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault117.bench fault518.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault118.bench fault562.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault118.bench fault569.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault119.bench fault570.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault120.bench fault571.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault120.bench fault574.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault121.bench fault633.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault122.bench fault634.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault123.bench fault627.bench
+Networks are equivalent.
+abc 01> cec fault123.bench fault628.bench
+Networks are equivalent.
+abc 01> cec fault123.bench fault635.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault123.bench fault640.bench
+Networks are equivalent.
+abc 01> cec fault124.bench fault642.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault124.bench fault650.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault124.bench fault658.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault124.bench fault666.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault124.bench fault674.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault124.bench fault682.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault124.bench fault690.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault125.bench fault689.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault126.bench fault691.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault126.bench fault694.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault127.bench fault730.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault128.bench fault729.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault129.bench fault699.bench
+Networks are equivalent.
+abc 01> cec fault129.bench fault704.bench
+Networks are equivalent.
+abc 01> cec fault129.bench fault707.bench
+Networks are equivalent.
+abc 01> cec fault129.bench fault712.bench
+Networks are equivalent.
+abc 01> cec fault129.bench fault715.bench
+Networks are equivalent.
+abc 01> cec fault129.bench fault720.bench
+Networks are equivalent.
+abc 01> cec fault129.bench fault723.bench
+Networks are equivalent.
+abc 01> cec fault129.bench fault728.bench
+Networks are equivalent.
+abc 01> cec fault129.bench fault731.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault129.bench fault736.bench
+Networks are equivalent.
+abc 01> cec fault130.bench fault762.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault130.bench fault770.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault131.bench fault769.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault132.bench fault771.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault132.bench fault774.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault133.bench fault809.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault133.bench fault817.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault133.bench fault825.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault134.bench fault826.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault135.bench fault827.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault135.bench fault828.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault136.bench fault889.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault137.bench fault881.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault137.bench fault890.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault138.bench fault891.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault138.bench fault892.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault139.bench fault945.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault140.bench fault946.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault141.bench fault931.bench
+Networks are equivalent.
+abc 01> cec fault141.bench fault932.bench
+Networks are equivalent.
+abc 01> cec fault141.bench fault939.bench
+Networks are equivalent.
+abc 01> cec fault141.bench fault944.bench
+Networks are equivalent.
+abc 01> cec fault141.bench fault947.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault141.bench fault952.bench
+Networks are equivalent.
+abc 01> cec fault142.bench fault985.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault142.bench fault987.bench
+Networks are equivalent.
+abc 01> cec fault142.bench fault990.bench
+Networks are equivalent.
+abc 01> cec fault142.bench fault993.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault143.bench fault994.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault144.bench fault995.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault144.bench fault996.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault145.bench fault1034.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault145.bench fault1042.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault145.bench fault1050.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault146.bench fault1041.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault146.bench fault1049.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault147.bench fault1043.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault147.bench fault1046.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault147.bench fault1051.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault147.bench fault1052.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault148.bench fault1053.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault148.bench fault1061.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault148.bench fault1069.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault148.bench fault1077.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault148.bench fault1085.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault149.bench fault1086.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault150.bench fault1087.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault150.bench fault1088.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault151.bench fault1117.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault152.bench fault1118.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault153.bench fault1095.bench
+Networks are equivalent.
+abc 01> cec fault153.bench fault1100.bench
+Networks are equivalent.
+abc 01> cec fault153.bench fault1103.bench
+Networks are equivalent.
+abc 01> cec fault153.bench fault1108.bench
+Networks are equivalent.
+abc 01> cec fault153.bench fault1111.bench
+Networks are equivalent.
+abc 01> cec fault153.bench fault1116.bench
+Networks are equivalent.
+abc 01> cec fault153.bench fault1119.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault153.bench fault1124.bench
+Networks are equivalent.
+abc 01> cec fault154.bench fault1157.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault155.bench fault1158.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault156.bench fault1151.bench
+Networks are equivalent.
+abc 01> cec fault156.bench fault1152.bench
+Networks are equivalent.
+abc 01> cec fault156.bench fault1159.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault156.bench fault1164.bench
+Networks are equivalent.
+abc 01> cec fault157.bench fault1206.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault157.bench fault1209.bench
+Networks are equivalent.
+abc 01> cec fault157.bench fault1213.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault157.bench fault1222.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault158.bench fault1214.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault158.bench fault1221.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault159.bench fault1215.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault159.bench fault1218.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault159.bench fault1223.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault159.bench fault1224.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault160.bench fault1241.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault160.bench fault1250.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault161.bench fault1249.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault162.bench fault1251.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault162.bench fault1252.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault163.bench fault1282.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault164.bench fault1281.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault165.bench fault1259.bench
+Networks are equivalent.
+abc 01> cec fault165.bench fault1264.bench
+Networks are equivalent.
+abc 01> cec fault165.bench fault1267.bench
+Networks are equivalent.
+abc 01> cec fault165.bench fault1272.bench
+Networks are equivalent.
+abc 01> cec fault165.bench fault1275.bench
+Networks are equivalent.
+abc 01> cec fault165.bench fault1280.bench
+Networks are equivalent.
+abc 01> cec fault165.bench fault1283.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault165.bench fault1288.bench
+Networks are equivalent.
+abc 01> cec fault166.bench fault1321.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault167.bench fault1290.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault167.bench fault1298.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault167.bench fault1306.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault167.bench fault1314.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault167.bench fault1322.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault168.bench fault1323.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault168.bench fault1326.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault169.bench fault1361.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault170.bench fault1362.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault171.bench fault1347.bench
+Networks are equivalent.
+abc 01> cec fault171.bench fault1350.bench
+Networks are equivalent.
+abc 01> cec fault171.bench fault1355.bench
+Networks are equivalent.
+abc 01> cec fault171.bench fault1360.bench
+Networks are equivalent.
+abc 01> cec fault171.bench fault1363.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault171.bench fault1368.bench
+Networks are equivalent.
+abc 01> cec fault172.bench fault1385.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault173.bench fault1386.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault174.bench fault1371.bench
+Networks are equivalent.
+abc 01> cec fault174.bench fault1376.bench
+Networks are equivalent.
+abc 01> cec fault174.bench fault1379.bench
+Networks are equivalent.
+abc 01> cec fault174.bench fault1384.bench
+Networks are equivalent.
+abc 01> cec fault174.bench fault1387.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault174.bench fault1392.bench
+Networks are equivalent.
+abc 01> cec fault175.bench fault1410.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault176.bench fault1409.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault177.bench fault1395.bench
+Networks are equivalent.
+abc 01> cec fault177.bench fault1400.bench
+Networks are equivalent.
+abc 01> cec fault177.bench fault1403.bench
+Networks are equivalent.
+abc 01> cec fault177.bench fault1408.bench
+Networks are equivalent.
+abc 01> cec fault177.bench fault1411.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault177.bench fault1416.bench
+Networks are equivalent.
+abc 01> cec fault178.bench fault1442.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault179.bench fault1417.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault179.bench fault1425.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault179.bench fault1433.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault179.bench fault1441.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault180.bench fault1443.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault180.bench fault1444.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault181.bench fault1473.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault181.bench fault1481.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault182.bench fault1474.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault182.bench fault1482.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault183.bench fault1451.bench
+Networks are equivalent.
+abc 01> cec fault183.bench fault1456.bench
+Networks are equivalent.
+abc 01> cec fault183.bench fault1459.bench
+Networks are equivalent.
+abc 01> cec fault183.bench fault1464.bench
+Networks are equivalent.
+abc 01> cec fault183.bench fault1467.bench
+Networks are equivalent.
+abc 01> cec fault183.bench fault1472.bench
+Networks are equivalent.
+abc 01> cec fault183.bench fault1475.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault183.bench fault1480.bench
+Networks are equivalent.
+abc 01> cec fault183.bench fault1483.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault183.bench fault1484.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault184.bench fault1517.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault185.bench fault1518.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault186.bench fault1487.bench
+Networks are equivalent.
+abc 01> cec fault186.bench fault1492.bench
+Networks are equivalent.
+abc 01> cec fault186.bench fault1495.bench
+Networks are equivalent.
+abc 01> cec fault186.bench fault1500.bench
+Networks are equivalent.
+abc 01> cec fault186.bench fault1503.bench
+Networks are equivalent.
+abc 01> cec fault186.bench fault1508.bench
+Networks are equivalent.
+abc 01> cec fault186.bench fault1511.bench
+Networks are equivalent.
+abc 01> cec fault186.bench fault1516.bench
+Networks are equivalent.
+abc 01> cec fault186.bench fault1519.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault186.bench fault1524.bench
+Networks are equivalent.
+abc 01> cec fault187.bench fault1557.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault188.bench fault1558.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault189.bench fault1551.bench
+Networks are equivalent.
+abc 01> cec fault189.bench fault1554.bench
+Networks are equivalent.
+abc 01> cec fault189.bench fault1559.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault189.bench fault1564.bench
+Networks are equivalent.
+abc 01> cec fault190.bench fault1597.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault191.bench fault1566.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault191.bench fault1574.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault191.bench fault1582.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault191.bench fault1590.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault191.bench fault1598.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault192.bench fault1599.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault192.bench fault1602.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault193.bench fault202.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault195.bench fault196.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault201.bench fault210.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault203.bench fault204.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault209.bench fault218.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault211.bench fault212.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault217.bench fault226.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault219.bench fault220.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault267.bench fault272.bench
+Networks are equivalent.
+abc 01> cec fault267.bench fault275.bench
+Networks are equivalent.
+abc 01> cec fault267.bench fault280.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault267.bench fault283.bench
+Networks are equivalent.
+abc 01> cec fault267.bench fault288.bench
+Networks are equivalent.
+abc 01> cec fault282.bench fault289.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault291.bench fault294.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault339.bench fault342.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault347.bench fault350.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault355.bench fault358.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault409.bench fault418.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault411.bench fault412.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault417.bench fault426.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault419.bench fault420.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault425.bench fault434.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault427.bench fault428.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault433.bench fault442.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault435.bench fault436.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault443.bench fault444.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault443.bench fault451.bench
+Networks are equivalent.
+abc 01> cec fault443.bench fault456.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault443.bench fault459.bench
+Networks are equivalent.
+abc 01> cec fault443.bench fault464.bench
+Networks are equivalent.
+abc 01> cec fault443.bench fault467.bench
+Networks are equivalent.
+abc 01> cec fault443.bench fault472.bench
+Networks are equivalent.
+abc 01> cec fault481.bench fault484.bench
+Networks are equivalent.
+abc 01> cec fault482.bench fault485.bench
+Networks are equivalent.
+abc 01> cec fault483.bench fault487.bench
+Networks are equivalent.
+abc 01> cec fault483.bench fault488.bench
+Networks are equivalent.
+abc 01> cec fault483.bench fault491.bench
+Networks are equivalent.
+abc 01> cec fault483.bench fault496.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault483.bench fault499.bench
+Networks are equivalent.
+abc 01> cec fault483.bench fault504.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault953.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault954.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault955.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault956.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault957.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault958.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault959.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault960.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault961.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault962.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault963.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault964.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault965.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault966.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault967.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault968.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault969.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault970.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault971.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault972.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault973.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault974.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault975.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault976.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault977.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault978.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault979.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault980.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault981.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault982.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault983.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault984.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault986.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault1171.bench
+Networks are equivalent.
+abc 01> cec fault486.bench fault1212.bench
+Networks are equivalent.
+abc 01> cec fault498.bench fault505.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault507.bench fault510.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault522.bench fault530.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault522.bench fault538.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault522.bench fault546.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault523.bench fault526.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault531.bench fault534.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault539.bench fault542.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault547.bench fault550.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault547.bench fault555.bench
+Networks are equivalent.
+abc 01> cec fault547.bench fault560.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault547.bench fault563.bench
+Networks are equivalent.
+abc 01> cec fault547.bench fault568.bench
+Networks are equivalent.
+abc 01> cec fault579.bench fault584.bench
+Networks are equivalent.
+abc 01> cec fault579.bench fault587.bench
+Networks are equivalent.
+abc 01> cec fault579.bench fault592.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault579.bench fault595.bench
+Networks are equivalent.
+abc 01> cec fault579.bench fault600.bench
+Networks are equivalent.
+abc 01> cec fault579.bench fault603.bench
+Networks are equivalent.
+abc 01> cec fault579.bench fault608.bench
+Networks are equivalent.
+abc 01> cec fault579.bench fault611.bench
+Networks are equivalent.
+abc 01> cec fault579.bench fault616.bench
+Networks are equivalent.
+abc 01> cec fault609.bench fault618.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault617.bench fault626.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault619.bench fault620.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault643.bench fault646.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault651.bench fault654.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault659.bench fault662.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault667.bench fault670.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault675.bench fault678.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault683.bench fault686.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault705.bench fault722.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault706.bench fault721.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault716.bench fault725.bench
+Networks are equivalent.
+abc 01> cec fault717.bench fault724.bench
+Networks are equivalent.
+abc 01> cec fault739.bench fault744.bench
+Networks are equivalent.
+abc 01> cec fault739.bench fault747.bench
+Networks are equivalent.
+abc 01> cec fault739.bench fault752.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault739.bench fault755.bench
+Networks are equivalent.
+abc 01> cec fault739.bench fault760.bench
+Networks are equivalent.
+abc 01> cec fault739.bench fault763.bench
+Networks are equivalent.
+abc 01> cec fault739.bench fault768.bench
+Networks are equivalent.
+abc 01> cec fault779.bench fault784.bench
+Networks are equivalent.
+abc 01> cec fault779.bench fault787.bench
+Networks are equivalent.
+abc 01> cec fault779.bench fault792.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault779.bench fault795.bench
+Networks are equivalent.
+abc 01> cec fault779.bench fault800.bench
+Networks are equivalent.
+abc 01> cec fault779.bench fault803.bench
+Networks are equivalent.
+abc 01> cec fault779.bench fault808.bench
+Networks are equivalent.
+abc 01> cec fault779.bench fault811.bench
+Networks are equivalent.
+abc 01> cec fault779.bench fault816.bench
+Networks are equivalent.
+abc 01> cec fault819.bench fault820.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault835.bench fault840.bench
+Networks are equivalent.
+abc 01> cec fault835.bench fault843.bench
+Networks are equivalent.
+abc 01> cec fault835.bench fault848.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault835.bench fault851.bench
+Networks are equivalent.
+abc 01> cec fault835.bench fault856.bench
+Networks are equivalent.
+abc 01> cec fault835.bench fault859.bench
+Networks are equivalent.
+abc 01> cec fault835.bench fault864.bench
+Networks are equivalent.
+abc 01> cec fault835.bench fault867.bench
+Networks are equivalent.
+abc 01> cec fault835.bench fault872.bench
+Networks are equivalent.
+abc 01> cec fault866.bench fault874.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault873.bench fault882.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault875.bench fault878.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault883.bench fault884.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault897.bench fault905.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault897.bench fault913.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault897.bench fault921.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault897.bench fault929.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault899.bench fault900.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault907.bench fault908.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault915.bench fault916.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault923.bench fault924.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault988.bench fault992.bench
+Networks are equivalent.
+abc 01> cec fault989.bench fault991.bench
+Networks are equivalent.
+abc 01> cec fault1003.bench fault1008.bench
+Networks are equivalent.
+abc 01> cec fault1003.bench fault1011.bench
+Networks are equivalent.
+abc 01> cec fault1003.bench fault1016.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1003.bench fault1019.bench
+Networks are equivalent.
+abc 01> cec fault1003.bench fault1024.bench
+Networks are equivalent.
+abc 01> cec fault1003.bench fault1027.bench
+Networks are equivalent.
+abc 01> cec fault1003.bench fault1032.bench
+Networks are equivalent.
+abc 01> cec fault1003.bench fault1035.bench
+Networks are equivalent.
+abc 01> cec fault1003.bench fault1040.bench
+Networks are equivalent.
+abc 01> cec fault1055.bench fault1056.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1063.bench fault1064.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1071.bench fault1072.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1079.bench fault1080.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1125.bench fault1134.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1127.bench fault1128.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1133.bench fault1142.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1135.bench fault1136.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1141.bench fault1149.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1143.bench fault1144.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1165.bench fault1168.bench
+Networks are equivalent.
+abc 01> cec fault1166.bench fault1169.bench
+Networks are equivalent.
+abc 01> cec fault1166.bench fault1174.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1166.bench fault1182.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1166.bench fault1190.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1166.bench fault1197.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1167.bench fault1170.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1167.bench fault1172.bench
+Networks are equivalent.
+abc 01> cec fault1175.bench fault1178.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1183.bench fault1186.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1191.bench fault1194.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1198.bench fault1205.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1198.bench fault1208.bench
+Networks are equivalent.
+abc 01> cec fault1199.bench fault1202.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1207.bench fault1210.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1207.bench fault1211.bench
+Networks are equivalent.
+abc 01> cec fault1225.bench fault1234.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1227.bench fault1228.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1233.bench fault1242.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1235.bench fault1236.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1243.bench fault1244.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1291.bench fault1294.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1299.bench fault1302.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1307.bench fault1310.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1315.bench fault1318.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1330.bench fault1338.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1330.bench fault1346.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1331.bench fault1334.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1339.bench fault1342.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1419.bench fault1420.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1427.bench fault1428.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1435.bench fault1436.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1526.bench fault1534.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1526.bench fault1542.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1526.bench fault1550.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1527.bench fault1530.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1535.bench fault1538.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1543.bench fault1546.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1567.bench fault1570.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1575.bench fault1578.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1583.bench fault1586.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault1591.bench fault1594.bench
+Networks are equivalent after structural hashing.
+abc 01>
