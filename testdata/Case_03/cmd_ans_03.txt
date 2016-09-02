@@ -1,0 +1,3111 @@
+abc 01> cec fault1.bench fault485.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=1 3232=0 3230=1 3227=0 3228=0 3233=0 3231=1
+abc 01> cec fault1.bench fault486.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=1 3227=0 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault487.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=1 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault488.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=1 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault489.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3229=1 3232=0 3230=1 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault490.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=1 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault491.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3229=1 3232=0 3230=1 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault492.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=1 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault493.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=1 3232=0 3230=1 3227=0 3228=0 3233=0 3231=1
+abc 01> cec fault1.bench fault497.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=1 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault499.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=1 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault501.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=0 3227=0 3228=0 3233=1 3231=0
+abc 01> cec fault1.bench fault504.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=1 3232=0 3230=1 3227=0 3228=0 3233=0 3231=1
+abc 01> cec fault1.bench fault506.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=1 3232=0 3230=1 3227=0 3228=1 3233=1 3231=1
+abc 01> cec fault1.bench fault509.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault512.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault514.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=1 3233=1 3231=0
+abc 01> cec fault1.bench fault517.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault520.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault522.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=1 3233=0 3231=0
+abc 01> cec fault1.bench fault525.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault528.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault530.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3229=0 3232=0 3230=1 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault533.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault536.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault538.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3229=0 3232=1 3230=0 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault544.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3229=0 3232=0 3230=0 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault546.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3229=1 3232=0 3230=0 3227=1 3228=0 3233=0 3231=0
+abc 01> cec fault1.bench fault550.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault553.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault556.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3227=0 3233=1 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault557.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault560.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=1 3233=0 3230=0 3229=0 3228=0
+abc 01> cec fault1.bench fault564.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=1 3233=0 3230=0 3229=0 3228=0
+abc 01> cec fault1.bench fault566.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault569.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault572.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=1 3228=1
+abc 01> cec fault1.bench fault573.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault576.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault580.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3227=0 3233=0 3230=1 3229=0 3228=0
+abc 01> cec fault1.bench fault582.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault585.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault587.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3227=0 3233=1 3230=0 3229=0 3228=0
+abc 01> cec fault1.bench fault589.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=1 3233=0 3230=0 3229=0 3228=0
+abc 01> cec fault1.bench fault592.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=0 3233=0 3230=0 3229=0 3228=1
+abc 01> cec fault1.bench fault595.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=1 3233=0 3230=0 3229=0 3228=0
+abc 01> cec fault1.bench fault598.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=1 3233=0 3230=0 3229=0 3228=0
+abc 01> cec fault1.bench fault601.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3227=1 3233=0 3230=0 3229=0 3228=0
+abc 01> cec fault1.bench fault603.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=1 3227=1 3233=0 3230=0 3229=0 3228=0
+abc 01> cec fault1.bench fault605.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=1 3232=1 3233=1
+abc 01> cec fault1.bench fault613.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=1 3232=1 3233=1
+abc 01> cec fault1.bench fault665.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=0 3230=1
+abc 01> cec fault1.bench fault667.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=0 3230=1
+abc 01> cec fault1.bench fault673.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=1 3230=0
+abc 01> cec fault1.bench fault675.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=1 3230=0
+abc 01> cec fault1.bench fault678.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault681.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=1 3231=0 3230=0
+abc 01> cec fault1.bench fault683.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=1 3231=0 3230=0
+abc 01> cec fault1.bench fault686.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault689.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=1 3230=0
+abc 01> cec fault1.bench fault691.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=1
+abc 01> cec fault1.bench fault694.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault697.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=1 3229=0 3232=0 3231=0 3230=0
+abc 01> cec fault1.bench fault699.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=1 3229=0 3232=0 3231=0 3230=0
+abc 01> cec fault1.bench fault702.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault710.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault713.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault716.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault717.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault720.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault724.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault726.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault729.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault732.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault733.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault736.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault740.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=1 3228=0
+abc 01> cec fault1.bench fault742.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault745.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault748.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=1 3229=0 3228=1
+abc 01> cec fault1.bench fault749.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault752.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault756.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=0 3227=0 3232=0 3233=1 3231=0 3229=1 3228=0
+abc 01> cec fault1.bench fault758.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault761.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault764.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=1 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault765.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault768.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=0 3227=1 3232=0 3233=0 3231=0 3229=0 3228=0
+abc 01> cec fault1.bench fault772.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=0 3227=1 3232=0 3233=0 3231=0 3229=0 3228=0
+abc 01> cec fault1.bench fault777.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault1.bench fault782.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=1 3228=1 3233=1
+abc 01> cec fault1.bench fault783.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=1 3228=0 3233=0
+abc 01> cec fault1.bench fault784.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=1 3228=0 3233=0
+abc 01> cec fault1.bench fault785.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=1 3228=0 3233=0
+abc 01> cec fault1.bench fault786.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=1 3228=1 3233=0
+abc 01> cec fault1.bench fault787.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=1 3228=0 3233=0
+abc 01> cec fault1.bench fault788.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=1 3228=1 3233=0
+abc 01> cec fault1.bench fault793.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=1 3228=0 3233=0
+abc 01> cec fault1.bench fault795.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=1 3233=1
+abc 01> cec fault1.bench fault797.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault798.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault799.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault800.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault801.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault802.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault803.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault804.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault805.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault806.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault807.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault809.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=1 3233=1
+abc 01> cec fault1.bench fault810.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault811.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=1 3233=1
+abc 01> cec fault1.bench fault813.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault814.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault815.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault816.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault817.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault818.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault819.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault820.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault821.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault822.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault823.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault824.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault825.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault826.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault827.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault828.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault829.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault830.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=1 3233=1
+abc 01> cec fault1.bench fault831.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault832.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault833.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault834.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=1 3233=1
+abc 01> cec fault1.bench fault835.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault836.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault837.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault838.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=0 3233=0
+abc 01> cec fault1.bench fault839.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=0 3233=0
+abc 01> cec fault1.bench fault840.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=0 3233=0
+abc 01> cec fault1.bench fault841.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=0 3233=1
+abc 01> cec fault1.bench fault842.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=0 3233=0
+abc 01> cec fault1.bench fault843.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault844.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=0 3233=0
+abc 01> cec fault1.bench fault845.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault846.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=0 3232=0 3233=0
+abc 01> cec fault1.bench fault847.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=0 3232=0 3233=0
+abc 01> cec fault1.bench fault848.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=0 3232=0 3233=0
+abc 01> cec fault1.bench fault849.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=0 3233=0
+abc 01> cec fault1.bench fault850.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=0 3232=0 3233=0
+abc 01> cec fault1.bench fault851.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=1 3232=0 3233=0
+abc 01> cec fault1.bench fault852.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=0 3232=0 3233=0
+abc 01> cec fault1.bench fault853.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3228=1 3232=1 3233=0
+abc 01> cec fault1.bench fault857.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=0 3232=0 3233=0
+abc 01> cec fault1.bench fault859.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3228=0 3232=0 3233=0
+abc 01> cec fault1.bench fault861.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault862.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault863.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault864.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault865.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault866.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault867.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault868.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault869.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault870.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault871.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault872.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault873.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault874.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault875.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault876.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault877.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault878.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault879.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault880.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault881.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault882.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault883.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault884.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault885.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault886.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault887.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault888.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault889.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault890.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault891.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault892.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault893.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault894.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault895.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault896.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault897.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault898.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault899.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault900.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault901.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault902.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault903.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault904.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault905.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=1
+abc 01> cec fault1.bench fault906.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault907.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=1
+abc 01> cec fault1.bench fault908.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault909.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault910.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault911.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault912.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault913.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=1 3229=0
+abc 01> cec fault1.bench fault914.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault915.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=1 3229=0
+abc 01> cec fault1.bench fault916.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault917.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault922.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault924.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault925.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault926.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=1 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault927.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=1 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault928.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=1 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault929.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=1 3232=0 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault930.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=1 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault931.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=1 3232=0 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault932.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=1 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault933.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault934.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=0 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault935.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=0 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault936.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=0 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault937.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=1 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault938.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=0 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault939.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=1 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault940.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=0 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault941.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1 3227=1 3233=0 3229=0
+abc 01> cec fault1.bench fault945.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=0 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault947.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3230=1 3231=0 3232=0 3227=0 3233=0 3229=0
+abc 01> cec fault1.bench fault949.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault952.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault955.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=1
+abc 01> cec fault1.bench fault957.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault960.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault963.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=1 3227=0 3230=0 3233=0 3229=1
+abc 01> cec fault1.bench fault965.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault968.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault971.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=0 3230=1 3233=0 3229=1
+abc 01> cec fault1.bench fault973.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault976.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault979.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=0 3230=0 3233=1 3229=1
+abc 01> cec fault1.bench fault981.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault984.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault987.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=1 3228=0 3232=0 3227=0 3230=0 3233=0 3229=1
+abc 01> cec fault1.bench fault990.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault993.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault995.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=1 3227=0 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault997.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault1000.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault1003.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=1 3227=0 3230=1 3233=0 3229=1
+abc 01> cec fault1.bench fault1006.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault1009.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault1011.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=1 3232=0 3227=0 3230=1 3233=1 3229=0
+abc 01> cec fault1.bench fault1016.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault1027.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=0 3230=1 3233=0 3229=0
+abc 01> cec fault1.bench fault1034.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=1 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault1042.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=1 3227=0 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault1046.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=1 3232=0 3227=1 3230=0 3233=0 3229=1
+abc 01> cec fault1.bench fault1049.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=1
+abc 01> cec fault1.bench fault1050.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=1 3232=0 3227=1 3230=0 3233=0 3229=1
+abc 01> cec fault1.bench fault1054.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=1 3232=0 3227=1 3230=0 3233=0 3229=1
+abc 01> cec fault1.bench fault1057.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0 3233=0 3229=1
+abc 01> cec fault1.bench fault1058.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=1 3228=0 3232=0 3227=1 3230=0 3233=0 3229=0
+abc 01> cec fault1.bench fault1061.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3233=1 3227=1 3230=1
+abc 01> cec fault1.bench fault1065.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3233=1 3227=1 3230=0
+abc 01> cec fault1.bench fault1067.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3233=1 3227=1 3230=0
+abc 01> cec fault1.bench fault1069.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3233=1 3227=1 3230=1
+abc 01> cec fault1.bench fault1073.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3233=0 3227=1 3230=1
+abc 01> cec fault1.bench fault1075.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3233=0 3227=1 3230=1
+abc 01> cec fault1.bench fault1077.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=1 3231=0
+abc 01> cec fault1.bench fault1078.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=1 3232=1 3233=1 3231=1
+abc 01> cec fault1.bench fault1079.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=1 3231=0
+abc 01> cec fault1.bench fault1080.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=1 3231=0
+abc 01> cec fault1.bench fault1081.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=1 3231=0
+abc 01> cec fault1.bench fault1082.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=1 3231=1
+abc 01> cec fault1.bench fault1083.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=1 3231=0
+abc 01> cec fault1.bench fault1084.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=1 3231=1
+abc 01> cec fault1.bench fault1086.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=1 3231=0
+abc 01> cec fault1.bench fault1089.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3228=0 3230=0 3229=1 3227=1 3232=0 3233=0 3231=1
+abc 01> cec fault1.bench fault1091.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=1 3232=0 3233=0 3231=1
+abc 01> cec fault1.bench fault1093.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=1 3232=1 3233=1 3231=1
+abc 01> cec fault1.bench fault1096.bench
+Networks are equivalent.
+abc 01> cec fault1.bench fault1099.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=1 3232=1 3233=1 3231=1
+abc 01> cec fault1.bench fault1102.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=0 3231=0
+abc 01> cec fault1.bench fault1105.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=0 3231=0
+abc 01> cec fault1.bench fault1107.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=1 3232=1 3233=1 3231=1
+abc 01> cec fault1.bench fault1109.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=1 3232=0 3233=0 3231=0
+abc 01> cec fault1.bench fault1112.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=0 3232=1 3233=0 3231=0
+abc 01> cec fault1.bench fault1115.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=1 3232=0 3233=0 3231=0
+abc 01> cec fault1.bench fault1121.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=0 3229=0 3227=1 3232=0 3233=0 3231=0
+abc 01> cec fault1.bench fault1123.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3228=0 3230=0 3229=1 3227=1 3232=0 3233=0 3231=0
+abc 01> cec fault1.bench fault1131.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=0 3230=1 3229=0 3227=0 3232=0 3233=0 3231=0
+abc 01> cec fault1.bench fault1139.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3228=1 3230=0 3229=0 3227=1 3232=0 3233=0 3231=0
+abc 01> cec fault1.bench fault1141.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=0 3233=0
+abc 01> cec fault1.bench fault1142.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=1 3233=1
+abc 01> cec fault1.bench fault1143.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=1 3233=1
+abc 01> cec fault1.bench fault1144.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=1 3233=1
+abc 01> cec fault1.bench fault1145.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=1 3233=1
+abc 01> cec fault1.bench fault1146.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=1 3233=0
+abc 01> cec fault1.bench fault1147.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=0 3233=0
+abc 01> cec fault1.bench fault1148.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=1 3233=1
+abc 01> cec fault1.bench fault1149.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1150.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=0 3233=0
+abc 01> cec fault1.bench fault1151.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1152.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1153.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=0 3230=1 3233=1
+abc 01> cec fault1.bench fault1154.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1155.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=0 3230=1 3233=1
+abc 01> cec fault1.bench fault1156.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1157.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1158.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=1 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1159.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1160.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1161.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=1 3228=1 3230=0 3233=0
+abc 01> cec fault1.bench fault1162.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1163.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=1 3228=1 3230=0 3233=0
+abc 01> cec fault1.bench fault1164.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1165.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=0 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1166.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1167.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=0 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1168.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=0 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1169.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1170.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=0 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1171.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3232=1 3229=0 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1172.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=0 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1174.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=0 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1177.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=0 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1179.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=0 3232=0 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1184.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0 3229=0 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1195.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3232=1 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1200.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=0 3232=0 3229=1 3228=0 3230=0 3233=0
+abc 01> cec fault1.bench fault1203.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3232=1 3229=1 3228=1 3230=0 3233=0
+abc 01> cec fault26.bench fault27.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault494.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault495.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault496.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault498.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault500.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault502.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault503.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault505.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault507.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault508.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault510.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault511.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault513.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault515.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault516.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault518.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault519.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault521.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault523.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault524.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault526.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault527.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault529.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault531.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault532.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault534.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault535.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault537.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault539.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault540.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault542.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault26.bench fault543.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault545.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault547.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault26.bench fault548.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1844
+Output 1844: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault30.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault549.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault551.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault552.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault554.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault555.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault558.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault559.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault561.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault562.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault563.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault565.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault567.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault568.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault570.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault571.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault574.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault575.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault577.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault578.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault579.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault581.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault583.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault584.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault586.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault588.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault590.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault591.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault593.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault594.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault596.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault597.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault29.bench fault599.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault600.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault602.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault29.bench fault604.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1845
+Output 1845: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault32.bench fault33.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault32.bench fault614.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault32.bench fault615.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault32.bench fault616.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault34.bench fault36.bench
+Networks are equivalent.
+abc 01> cec fault34.bench fault701.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault34.bench fault703.bench
+Networks are equivalent.
+abc 01> cec fault34.bench fault706.bench
+Networks are equivalent.
+abc 01> cec fault37.bench fault709.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault711.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault712.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault714.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault715.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault718.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault719.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault721.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault722.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault723.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault725.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault727.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault728.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault730.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault731.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault734.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault735.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault737.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault738.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault739.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault741.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault743.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault744.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault746.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault747.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault750.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault751.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault753.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault754.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault755.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault757.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault759.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault760.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault762.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault763.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault766.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault37.bench fault767.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault769.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault770.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault771.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault37.bench fault773.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault37.bench fault779.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault38.bench fault774.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault38.bench fault780.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault39.bench fault775.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault39.bench fault776.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1848
+Output 1848: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=0 3227=0 3232=0 3233=0 3231=0 3229=0 3228=1
+abc 01> cec fault39.bench fault778.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault40.bench fault42.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault40.bench fault789.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault40.bench fault791.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault40.bench fault792.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault40.bench fault794.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault40.bench fault796.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1849
+Output 1849: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault44.bench fault45.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault44.bench fault854.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault44.bench fault855.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault44.bench fault856.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault44.bench fault858.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault44.bench fault860.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1850
+Output 1850: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault47.bench fault48.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault47.bench fault942.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault47.bench fault943.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault47.bench fault944.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault47.bench fault946.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault47.bench fault948.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault51.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault950.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault951.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault953.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault954.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault956.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault958.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault959.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault961.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault962.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault964.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault966.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault967.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault969.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault970.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault972.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault974.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault975.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault977.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault978.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault980.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault982.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault983.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault985.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault986.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault988.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault989.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault991.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault992.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault994.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault996.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault998.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault999.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1001.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1002.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1004.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1005.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1007.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1008.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1010.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1012.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1015.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1017.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1020.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1023.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1026.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1028.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1031.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1035.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1036.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1039.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1043.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1044.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1045.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1047.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1048.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1051.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1052.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1053.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault50.bench fault1055.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1056.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1059.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault50.bench fault1060.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault52.bench fault54.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault52.bench fault1070.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault52.bench fault1071.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault52.bench fault1072.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault52.bench fault1074.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault52.bench fault1076.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault55.bench fault1118.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault55.bench fault1125.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault55.bench fault1128.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault55.bench fault1134.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault55.bench fault1137.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault56.bench fault1085.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1087.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1088.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1090.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1092.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1094.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1095.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1097.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1098.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1100.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1101.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1103.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1104.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1106.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1108.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1110.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1111.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1113.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1114.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1116.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1117.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1119.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1120.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1122.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1124.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1126.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1129.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault56.bench fault1133.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault56.bench fault1136.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:
+abc 01> cec fault57.bench fault1127.bench
+Networks are equivalent.
+abc 01> cec fault57.bench fault1130.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1854
+Output 1854: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3228=0 3230=1 3229=0 3227=0 3232=0 3233=0 3231=0
+abc 01> cec fault57.bench fault1132.bench
+Networks are equivalent.
+abc 01> cec fault57.bench fault1135.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault57.bench fault1140.bench
+Networks are equivalent.
+abc 01> cec fault58.bench fault60.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1173.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1175.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1176.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1178.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1180.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1183.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1185.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1188.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1191.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1194.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1196.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1198.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault58.bench fault1199.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1201.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1202.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault58.bench fault1204.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:
+abc 01> cec fault606.bench fault607.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=1
+abc 01> cec fault606.bench fault608.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=1
+abc 01> cec fault606.bench fault610.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=1
+abc 01> cec fault606.bench fault612.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=1
+abc 01> cec fault606.bench fault617.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3228=0
+abc 01> cec fault606.bench fault619.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3228=0
+abc 01> cec fault609.bench fault611.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3228=1 3232=1 3233=1
+abc 01> cec fault618.bench fault620.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1846
+Output 1846: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3228=1 3232=1 3233=1
+abc 01> cec fault645.bench fault647.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault648.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault650.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault652.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault653.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault655.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault656.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault658.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault660.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault661.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=0 3230=1
+abc 01> cec fault645.bench fault663.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=0 3230=1
+abc 01> cec fault645.bench fault664.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault666.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=0 3230=1
+abc 01> cec fault645.bench fault668.bench
+Networks are equivalent.
+abc 01> cec fault645.bench fault669.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=1 3230=0
+abc 01> cec fault645.bench fault671.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=1 3230=0
+abc 01> cec fault645.bench fault672.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=0 3230=1
+abc 01> cec fault645.bench fault674.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=1 3230=0
+abc 01> cec fault645.bench fault676.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=0 3230=1
+abc 01> cec fault645.bench fault677.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=0 3230=1
+abc 01> cec fault645.bench fault679.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=1 3231=0 3230=0
+abc 01> cec fault645.bench fault680.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=1 3230=0
+abc 01> cec fault645.bench fault682.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=1 3231=0 3230=0
+abc 01> cec fault645.bench fault684.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=0 3232=0 3231=1 3230=0
+abc 01> cec fault645.bench fault685.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault687.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault688.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault690.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault692.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault693.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=1 3229=0 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault695.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault696.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault698.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault700.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=0 3229=1 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault704.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=1 3229=0 3232=0 3231=0 3230=0
+abc 01> cec fault645.bench fault708.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1847
+Output 1847: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3228=1 3229=0 3232=0 3231=0 3230=0
+abc 01> cec fault705.bench fault707.bench
+Networks are equivalent.
+abc 01> cec fault781.bench fault790.bench
+Networks are equivalent after structural hashing.
+abc 01> cec fault808.bench fault812.bench
+Networks are equivalent.
+abc 01> cec fault918.bench fault919.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1
+abc 01> cec fault918.bench fault920.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1
+abc 01> cec fault918.bench fault921.bench
+Networks are equivalent.
+abc 01> cec fault918.bench fault923.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1851
+Output 1851: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3230=1 3231=1 3232=1
+abc 01> cec fault1013.bench fault1019.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0
+abc 01> cec fault1013.bench fault1022.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=1
+abc 01> cec fault1013.bench fault1025.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=0 3230=1
+abc 01> cec fault1013.bench fault1030.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0
+abc 01> cec fault1013.bench fault1033.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=1 3232=0 3227=1 3230=0
+abc 01> cec fault1013.bench fault1038.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0
+abc 01> cec fault1013.bench fault1041.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0
+abc 01> cec fault1014.bench fault1018.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0
+abc 01> cec fault1014.bench fault1021.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=1
+abc 01> cec fault1014.bench fault1024.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=0 3230=1
+abc 01> cec fault1014.bench fault1029.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0
+abc 01> cec fault1014.bench fault1032.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3231=0 3228=1 3232=0 3227=1 3230=0
+abc 01> cec fault1014.bench fault1037.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0
+abc 01> cec fault1014.bench fault1040.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1852
+Output 1852: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3231=0 3228=0 3232=0 3227=1 3230=0
+abc 01> cec fault1062.bench fault1063.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3233=1
+abc 01> cec fault1062.bench fault1064.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3233=1
+abc 01> cec fault1062.bench fault1066.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3233=1
+abc 01> cec fault1062.bench fault1068.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1853
+Output 1853: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3233=1
+abc 01> cec fault1181.bench fault1187.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=1 3232=0
+abc 01> cec fault1181.bench fault1190.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=0 3232=1
+abc 01> cec fault1181.bench fault1193.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 0. Value in Network2 = 1.
+Input pattern:  3227=0 3232=1
+abc 01> cec fault1182.bench fault1186.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=1 3232=0
+abc 01> cec fault1182.bench fault1189.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3232=1
+abc 01> cec fault1182.bench fault1192.bench
+Networks are NOT EQUIVALENT.
+Verification failed for at least 1 outputs:  1855
+Output 1855: Value in Network1 = 1. Value in Network2 = 0.
+Input pattern:  3227=0 3232=1
+abc 01>
