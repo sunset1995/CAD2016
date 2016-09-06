@@ -19,7 +19,7 @@ vector< vector<int> > slots;
 void compare_all(const Circuit &ori_cir, Fault &faults, const vector<int> &slot) {
 
     for(int i=0; i<slot.size(); ++i) {
-        
+
         for(int j=i+1; j<slot.size(); ++j) {
             if( faults.same(slot[i], slot[j]) || faults.diff(slot[i], slot[j]) )
                 continue;
@@ -59,21 +59,11 @@ void procTrashFault(const Circuit &ori_cir, Fault &faults) {
     }
 }
 
-void printVector(vector<bool> &vec)
-{
-    printf("VEC:: ");
-    for(int i=0;i<vec.size();i++){
-        printf("%d ", vec[i]?1:0);
-    }
-    puts("");
-}
-
-
 void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, int sim_space_span = 20, int sim_time_span = 20) {
-    
+
     slots.clear();
     slots.resize(1);
-    
+
     // Init
     for(int i=0; i<faults.size(); ++i)
         slots[0].push_back(i);
@@ -91,13 +81,13 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, int sim_spa
         for(int __time_span=0; __time_span < __time_span_max; ++__time_span){
             for(int i=0; i<input.size(); ++i)
                 input[i] = rand()&1;
-            
+
             // Store slot leader output
             pair< vector<bool>, vector<bool> > tmp;
             vector< vector<bool> > output(slots.size());
             vector< vector<bool> > dff_next(cir.size(), vector<bool>(ori_cir.dff.size(), 0));
-            
-                    
+
+
             // No need to check new generated slot in same round
             int to = slots.size();
             for(int i=0; i<to; ++i) {
@@ -109,7 +99,7 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, int sim_spa
                 tmp = simulate(cir[slots[i][0]], input, dff[slots[i][0]]);
                 output[i] = tmp.first;
                 dff_next[slots[i][0]] = tmp.second;
-                
+
                 // all fault different from leader must exit
                 int start = slots.size();
                 int sz = 1;
@@ -138,7 +128,7 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, int sim_spa
                     }
                 }
                 slots[i].resize(sz);
-            }            
+            }
             dff = dff_next;
         }
         // if( !good )
@@ -155,19 +145,19 @@ void procRandomSimulationTest(const Circuit &ori_cir, Fault &faults, int sim_spa
 
 
 int main(int argv, char **argc) {
-    
-    srand(time(NULL));
-    int sim_space_span = 20, sim_time_span = 20;
+
+    srand(1231);
+    int sim_space_span = 31, sim_time_span = 37;
 
     if( argv<3 ) {
         puts("Not enough parameter");
         return 1;
     }
-    if(argv == 5){
-        sim_space_span = atoi(argc[3]);
-        sim_time_span = atoi(argc[4]);
-        // printf("Read sim argument: SpaceSpan: %d,  TimeSpan: %d\n", sim_space_span, sim_time_span);
-    }
+    // if(argv == 5){
+    //     sim_space_span = atoi(argc[3]);
+    //     sim_time_span = atoi(argc[4]);
+    //     // printf("Read sim argument: SpaceSpan: %d,  TimeSpan: %d\n", sim_space_span, sim_time_span);
+    // }
 
     freopen("identical_fault_pairs.txt", "w", stdout);
 
@@ -217,7 +207,7 @@ int main(int argv, char **argc) {
         }
     }
 
-    
+
     for(const auto &vec : slots)
         compare_all(ori_cir, faults, vec);
 
