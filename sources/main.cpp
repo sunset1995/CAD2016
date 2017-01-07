@@ -11,7 +11,7 @@
 #include "sources/SAT_solver.h"
 #include "sources/simulator.h"
 
-using namespace Minisat;
+using namespace std;
 
 vector<Circuit> cir;
 vector< vector<int> > slots;

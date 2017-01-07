@@ -6,14 +6,8 @@
 #include <algorithm>
 #include <errno.h>
 #include <zlib.h>
+#include "sources/yasat/solver.h"
 using namespace std;
-
-#include "sources/minisat/utils/System.h"
-#include "sources/minisat/utils/ParseUtils.h"
-#include "sources/minisat/utils/Options.h"
-#include "sources/minisat/core/SolverTypes.h"
-#include "sources/minisat/core/Solver.h"
-using namespace Minisat;
 
 /*
     Given boolean formular in CNF and number of distinct variable.

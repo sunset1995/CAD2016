@@ -8,7 +8,7 @@ MINISAT_RELSYM ?= -g
 # General flags
 G_FLAGS  = -O3 -std=c++11 -D NDEBUG -w
 
-SAT_SRCS = $(wildcard sources/minisat/*.cpp) $(wildcard sources/minisat/core/*.cpp) $(wildcard sources/minisat/simp/*.cpp) $(wildcard sources/minisat/utils/*.cpp)
+SAT_SRCS = $(wildcard sources/yasat/*.cpp)
 SAT_OBJS = $(addprefix build/, $(SAT_SRCS:.cpp=.o))
 SRCS     = $(wildcard sources/*.cpp)
 OBJS     = $(addprefix build/, $(SRCS:.cpp=.o))
